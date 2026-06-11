@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>語聲山語 · 語言治療衛教平台</title>
+<meta name="description" content="語言治療衛教知識平台，提供兒童語言發展、構音、吞嚥、嗓音與失語症等專業衛教資訊。">
+<link rel="canonical" href="https://slp-speech.github.io/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#eef1ea;
+  --cloud:#f7f6f1;
+  --tea-light:#b7c4a8;
+  --tea:#7d8f6f;
+  --tea-deep:#55674a;
+  --pine:#3d4a38;
+  --ink:#2e342b;
+  --earth:#a98f6f;
+  --earth-light:#d9cdbb;
+  --paper:#fbfaf6;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Noto Sans TC',sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.8;
+  font-weight:300;
+}
+h1,h2,h3,h4{font-family:'Noto Serif TC',serif;font-weight:600;color:var(--pine);}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+.container{max-width:1100px;margin:0 auto;padding:0 24px;}
+
+/* ===== Header ===== */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(251,250,246,.92);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(125,143,111,.18);
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Noto Serif TC',serif;font-size:1.25rem;font-weight:700;color:var(--tea-deep);letter-spacing:.12em;}
+.logo svg{width:30px;height:30px;}
+.nav-links{display:flex;gap:34px;font-size:.95rem;letter-spacing:.08em;font-weight:400;}
+.nav-links a{color:var(--tea-deep);position:relative;padding:4px 0;transition:color .3s;}
+.nav-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--tea);transition:width .3s;}
+.nav-links a:hover{color:var(--pine);}
+.nav-links a:hover::after{width:100%;}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+.menu-btn span{display:block;width:22px;height:2px;background:var(--tea-deep);margin:5px 0;border-radius:2px;}
+
+/* ===== Hero ===== */
+.hero{
+  position:relative;
+  min-height:92vh;
+  display:flex;align-items:center;
+  background:linear-gradient(180deg,#dfe6d8 0%,var(--mist) 55%,var(--paper) 100%);
+  overflow:hidden;
+  padding-top:68px;
+}
+.hero-mountains{position:absolute;bottom:0;left:0;width:100%;pointer-events:none;}
+.hero-mountains svg{display:block;width:100%;height:auto;}
+.hero-inner{position:relative;z-index:2;max-width:640px;}
+.hero-eyebrow{
+  display:inline-block;font-size:.85rem;letter-spacing:.35em;color:var(--tea-deep);
+  border-bottom:1px solid var(--tea-light);padding-bottom:8px;margin-bottom:26px;font-weight:400;
+}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.4;letter-spacing:.06em;margin-bottom:22px;}
+.hero h1 em{font-style:normal;color:var(--tea-deep);}
+.hero p{font-size:1.05rem;color:#5a6354;max-width:480px;margin-bottom:38px;}
+.btn{
+  display:inline-block;padding:13px 36px;border-radius:2px;
+  font-size:.95rem;letter-spacing:.2em;font-weight:400;transition:all .35s;
+}
+.btn-primary{background:var(--tea-deep);color:var(--cloud);}
+.btn-primary:hover{background:var(--pine);}
+.btn-ghost{border:1px solid var(--tea);color:var(--tea-deep);margin-left:14px;}
+.btn-ghost:hover{background:rgba(125,143,111,.1);}
+
+/* ===== Section base ===== */
+section{padding:90px 0;}
+.section-head{text-align:center;margin-bottom:60px;}
+.section-head .kanji{font-size:.8rem;letter-spacing:.5em;color:var(--earth);margin-bottom:12px;font-weight:400;}
+.section-head h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:.12em;}
+.section-head .divider{width:48px;height:1px;background:var(--tea);margin:22px auto 0;position:relative;}
+.section-head .divider::after{
+  content:'';position:absolute;left:50%;top:-3px;transform:translateX(-50%);
+  width:7px;height:7px;border-radius:50%;background:var(--tea-light);
+}
+
+/* ===== Topics ===== */
+.topics{background:var(--paper);}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.topic-card{
+  background:var(--cloud);
+  border:1px solid rgba(125,143,111,.16);
+  border-radius:4px;
+  padding:42px 32px 36px;
+  text-align:center;
+  transition:transform .35s,box-shadow .35s;
+  position:relative;overflow:hidden;
+}
+.topic-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--tea-light),var(--tea));
+  opacity:0;transition:opacity .35s;
+}
+.topic-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(61,74,56,.25);}
+.topic-card:hover::before{opacity:1;}
+.topic-icon{
+  width:64px;height:64px;margin:0 auto 22px;border-radius:50%;
+  background:var(--mist);display:flex;align-items:center;justify-content:center;
+}
+.topic-icon svg{width:32px;height:32px;stroke:var(--tea-deep);}
+.topic-card h3{font-size:1.15rem;letter-spacing:.1em;margin-bottom:12px;}
+.topic-card p{font-size:.92rem;color:#6a7263;}
+.topic-card .more{
+  display:inline-block;margin-top:18px;font-size:.82rem;letter-spacing:.2em;
+  color:var(--earth);border-bottom:1px solid transparent;transition:border-color .3s;
+}
+.topic-card:hover .more{border-color:var(--earth);}
+
+/* ===== About strip ===== */
+.about{
+  background:linear-gradient(180deg,var(--mist),#e4e9dd);
+  position:relative;overflow:hidden;
+}
+.about-inner{max-width:760px;}
+.about-text .kanji{font-size:.8rem;letter-spacing:.5em;color:var(--earth);margin-bottom:14px;font-weight:400;}
+.about-text h2{font-size:1.8rem;letter-spacing:.1em;margin-bottom:24px;line-height:1.5;}
+.about-text p{color:#525b4c;margin-bottom:18px;font-size:.98rem;}
+.about-list{list-style:none;margin-top:26px;}
+.about-list li{
+  padding:10px 0 10px 30px;position:relative;font-size:.95rem;color:var(--pine);
+  border-bottom:1px dashed rgba(125,143,111,.3);
+}
+.about-list li::before{
+  content:'';position:absolute;left:6px;top:50%;transform:translateY(-50%);
+  width:8px;height:8px;border-radius:50%;background:var(--tea);
+}
+
+/* ===== Articles ===== */
+.articles{background:var(--paper);}
+.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.article-card{
+  background:var(--cloud);border:1px solid rgba(125,143,111,.16);border-radius:4px;
+  overflow:hidden;transition:transform .35s,box-shadow .35s;display:flex;flex-direction:column;
+}
+.article-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px -18px rgba(61,74,56,.25);}
+.article-body{padding:26px 26px 30px;flex:1;display:flex;flex-direction:column;}
+.article-tag{
+  align-self:flex-start;font-size:.75rem;letter-spacing:.15em;color:var(--tea-deep);
+  background:var(--mist);padding:4px 12px;border-radius:20px;margin-bottom:14px;
+}
+.article-body h3{font-size:1.08rem;letter-spacing:.05em;line-height:1.6;margin-bottom:10px;}
+.article-body p{font-size:.9rem;color:#6a7263;flex:1;}
+.article-body time{font-size:.8rem;color:var(--earth);margin-top:16px;letter-spacing:.1em;}
+
+/* ===== Quote ===== */
+.quote{
+  background:var(--tea-deep);color:var(--cloud);text-align:center;
+  padding:80px 24px;position:relative;overflow:hidden;
+}
+.quote::before,.quote::after{
+  content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.05);
+}
+.quote::before{width:300px;height:300px;top:-150px;left:-80px;}
+.quote::after{width:220px;height:220px;bottom:-110px;right:-60px;}
+.quote blockquote{
+  font-family:'Noto Serif TC',serif;font-size:clamp(1.2rem,2.6vw,1.6rem);
+  letter-spacing:.15em;line-height:2;max-width:620px;margin:0 auto;position:relative;z-index:1;
+}
+.quote cite{display:block;margin-top:24px;font-size:.85rem;letter-spacing:.3em;color:var(--tea-light);font-style:normal;}
+
+/* ===== FAQ ===== */
+.faq{background:var(--paper);}
+.faq-list{max-width:760px;margin:0 auto;}
+.faq-item{border-bottom:1px solid rgba(125,143,111,.25);}
+.faq-item summary{
+  list-style:none;cursor:pointer;padding:24px 8px;display:flex;justify-content:space-between;
+  align-items:center;font-family:'Noto Serif TC',serif;font-size:1.05rem;color:var(--pine);
+  letter-spacing:.05em;transition:color .3s;
+}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary:hover{color:var(--tea-deep);}
+.faq-item summary::after{content:'＋';font-size:1.1rem;color:var(--tea);transition:transform .3s;}
+.faq-item[open] summary::after{transform:rotate(45deg);}
+.faq-item .faq-a{padding:0 8px 26px;font-size:.95rem;color:#5a6354;}
+
+/* ===== Footer ===== */
+footer{background:var(--pine);color:#c9d1c1;padding:60px 0 30px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:50px;margin-bottom:44px;}
+.footer-grid h4{color:var(--cloud);font-size:1rem;letter-spacing:.15em;margin-bottom:18px;}
+.footer-grid p,.footer-grid a{font-size:.88rem;color:#aab5a0;line-height:2.1;}
+.footer-grid a:hover{color:var(--cloud);}
+.footer-logo{display:flex;align-items:center;gap:10px;font-family:'Noto Serif TC',serif;font-size:1.2rem;color:var(--cloud);letter-spacing:.12em;margin-bottom:16px;}
+.footer-logo svg{width:26px;height:26px;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);padding-top:24px;text-align:center;
+  font-size:.78rem;color:#8a957f;letter-spacing:.1em;
+}
+
+/* ===== RWD ===== */
+@media(max-width:880px){
+  .topic-grid,.article-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:600px){
+  .nav-links{display:none;}
+  .menu-btn{display:block;}
+  .nav-links.open{
+    display:flex;flex-direction:column;position:absolute;top:68px;left:0;right:0;
+    background:var(--paper);padding:20px 24px;gap:16px;border-bottom:1px solid rgba(125,143,111,.2);
+  }
+  .topic-grid,.article-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:32px;}
+  .btn-ghost{margin-left:0;margin-top:12px;}
+  section{padding:64px 0;}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 12 8 19a8 8 0 0 0 16 0c0-7-8-15-8-15z" fill="#7d8f6f" opacity=".5"/><path d="M16 9c0 0-5 5.5-5 10a5 5 0 0 0 10 0c0-4.5-5-10-5-10z" fill="#55674a"/></svg>
+      語聲山語
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#topics">衛教主題</a>
+      <a href="#about">關於語言治療</a>
+      <a href="#articles">最新文章</a>
+      <a href="#faq">常見問題</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="選單"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="hero-mountains" aria-hidden="true">
+    <svg viewBox="0 0 1440 420" preserveAspectRatio="xMidYMax slice">
+      <path d="M0 320 L180 200 L340 290 L520 150 L700 280 L900 170 L1100 270 L1290 190 L1440 280 V420 H0 Z" fill="#b7c4a8" opacity=".45"/>
+      <path d="M0 360 L220 250 L420 330 L640 220 L860 320 L1080 240 L1280 320 L1440 260 V420 H0 Z" fill="#8da07c" opacity=".55"/>
+      <path d="M0 420 L160 330 L380 390 L600 300 L840 380 L1060 320 L1300 390 L1440 340 V420 Z" fill="#55674a" opacity=".8"/>
+      <ellipse cx="400" cy="300" rx="280" ry="36" fill="#f7f6f1" opacity=".55"/>
+      <ellipse cx="1000" cy="260" rx="320" ry="32" fill="#f7f6f1" opacity=".5"/>
+      <ellipse cx="720" cy="350" rx="380" ry="40" fill="#f7f6f1" opacity=".4"/>
+    </svg>
+  </div>
+  <div class="container hero-inner">
+    <span class="hero-eyebrow">語言治療 · 衛教知識</span>
+    <h1>慢慢說，沒關係。<br>陪你找回<em>說話的力量</em></h1>
+    <p>從孩子的第一句話，到長輩餐桌上的每一口安心。這裡彙整語言治療專業衛教知識，陪伴每個家庭理解溝通、吞嚥與嗓音的大小事。</p>
+    <a class="btn btn-primary" href="#topics">探索衛教主題</a>
+    <a class="btn btn-ghost" href="#about">認識語言治療</a>
+  </div>
+</section>
+
+<!-- ===== Topics ===== -->
+<section class="topics" id="topics">
+  <div class="container">
+    <div class="section-head">
+      <p class="kanji">六 大 主 題</p>
+      <h2>衛教知識分類</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="topic-grid">
+      <a class="topic-card" href="topics/child-language.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 3a7 7 0 0 1 7 7c0 3-2 4.5-2 7h-10c0-2.5-2-4-2-7a7 7 0 0 1 7-7z"/><path d="M9 21h6"/></svg></div>
+        <h3>兒童語言發展</h3>
+        <p>語言發展里程碑、遲緩警訊與居家促進策略，陪孩子一步步開口說話。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+      <a class="topic-card" href="topics/articulation.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 12a8 8 0 1 1 8 8H6l-2 2v-4"/><path d="M9 11h.01M12 11h.01M15 11h.01"/></svg></div>
+        <h3>構音與音韻</h3>
+        <p>臭乳呆是什麼？認識構音錯誤類型、評估時機與練習方法。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+      <a class="topic-card" href="topics/swallowing.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M8 3v5a4 4 0 0 0 8 0V3"/><path d="M12 12v5"/><path d="M8 21c0-2 1.8-4 4-4s4 2 4 4"/></svg></div>
+        <h3>吞嚥照護</h3>
+        <p>高齡與術後吞嚥困難的徵兆、進食安全與食物質地調整指引。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+      <a class="topic-card" href="topics/voice.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 12h3l2-7 4 14 3-10 2 3h4"/></svg></div>
+        <h3>嗓音保健</h3>
+        <p>教師、歌手與用聲工作者的護嗓之道，沙啞與聲帶問題的自我檢視。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+      <a class="topic-card" href="topics/aphasia.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M8 13c1 1.5 2.5 2 4 2s3-.5 4-2"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></div>
+        <h3>失語症與中風溝通</h3>
+        <p>認識失語症類型，學習與中風後家人溝通的實用技巧與復健觀念。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+      <a class="topic-card" href="topics/aac.html">
+        <div class="topic-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M7 8h10M7 12h6"/><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M9 21l3-4 3 4"/></svg></div>
+        <h3>溝通輔具與支持</h3>
+        <p>當口語不夠用時，認識 AAC 溝通輔具與多元溝通管道的選擇。</p>
+        <span class="more">閱讀更多 →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="about" id="about">
+  <div class="container about-inner">
+    <div class="about-text">
+      <p class="kanji">關 於 我 們</p>
+      <h2>每一次溝通，<br>都值得被好好對待</h2>
+      <p>語言治療師（Speech-Language Pathologist）是溝通與吞嚥的專業夥伴。我們相信衛教知識應該自然、清晰、容易親近。</p>
+      <p>本平台彙整實證為基礎的衛教文章，協助家長、照顧者與一般民眾，在面對溝通與吞嚥的疑問時，找到可信賴的第一步。</p>
+      <ul class="about-list">
+        <li>以實證研究為基礎的衛教內容</li>
+        <li>涵蓋兒童到高齡的全齡議題</li>
+        <li>用平易語言說明專業知識</li>
+        <li>提醒就醫與評估的適當時機</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Articles ===== -->
+<section class="articles" id="articles">
+  <div class="container">
+    <div class="section-head">
+      <p class="kanji">精 選 文 章</p>
+      <h2>最新衛教文章</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="article-grid">
+      <a class="article-card" href="articles/stroke-warning.html">
+        <div class="article-body">
+          <span class="article-tag">失語症與中風溝通</span>
+          <h3>講話突然不清楚是中風前兆嗎？BE-FAST 中風警訊與處理</h3>
+          <p>突然大舌頭、說不出話別輕忽。BE-FAST 口訣、小中風危險與正確處理。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/ppa.html">
+        <div class="article-body">
+          <span class="article-tag">失語症與中風溝通</span>
+          <h3>記憶還好卻越來越說不出話？認識原發性漸進性失語症（PPA）</h3>
+          <p>以語言退化為主的失智症：三種類型、評估管道與家屬支持方式。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/screen-time.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>小孩一直看電視會語言遲緩嗎？幼兒螢幕時間的研究與建議</h3>
+          <p>幾歲能看、一天看多久？螢幕與語言發展的研究證據和實戰指南。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/phonological-awareness.html">
+        <div class="article-body">
+          <span class="article-tag">構音與音韻</span>
+          <h3>小孩注音學不會怎麼辦？音韻覺識與閱讀能力的關鍵</h3>
+          <p>拼不起來不是不聰明。音韻覺識與閱讀的關係，和在家玩的拼音遊戲。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/otitis-media.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>中耳炎會影響聽力和語言發展嗎？中耳積水的觀察與處理</h3>
+          <p>不痛不癢的中耳積水會害孩子講話慢嗎？研究證據與處理原則。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/hoarse-voice.html">
+        <div class="article-body">
+          <span class="article-tag">嗓音保健</span>
+          <h3>燒聲怎麼辦？聲音啞掉的原因、快速恢復方法與就醫時機</h3>
+          <p>少說話、多喝水之外還能做什麼？有依據的恢復方法與別做的四件事。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/dementia-communication.html">
+        <div class="article-body">
+          <span class="article-tag">溝通輔具與支持</span>
+          <h3>失智症長輩一直重複問怎麼辦？失智症溝通技巧全指南</h3>
+          <p>重複問、雞同鴨講、認錯人怎麼回應？有研究依據的溝通技巧整理。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/baby-sign.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>寶寶手語有用嗎？嬰兒手語的研究真相與正確用法</h3>
+          <p>會更早說話？還是不肯開口？用研究證據看嬰兒手語的真實效果。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/tongue-tie.html">
+        <div class="article-body">
+          <span class="article-tag">構音與音韻</span>
+          <h3>小孩大舌頭要剪舌繫帶嗎？發音不清和舌繫帶的真相</h3>
+          <p>大多數「大舌頭」和舌繫帶無關。用研究證據看評估重點與手術時機。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/stroke-speech.html">
+        <div class="article-body">
+          <span class="article-tag">失語症與中風溝通</span>
+          <h3>中風後說話不清楚會好嗎？語言復健的時機、方法與家屬指南</h3>
+          <p>吶吃與失語症的差別、復健黃金期的真相，與家屬陪伴練習的做法。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/hearing-loss.html">
+        <div class="article-body">
+          <span class="article-tag">溝通輔具與支持</span>
+          <h3>老人重聽怎麼溝通？聽力退化的警訊、助聽器迷思與溝通技巧</h3>
+          <p>大聲吼反而聽不清。老年性聽損、聽力與失智的關聯，與七個溝通技巧。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/early-intervention.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>早療是什麼？兒童發展遲緩的評估流程、黃金期與資源整理</h3>
+          <p>黃金期的研究依據、聯合評估流程、通報轉介管道與補助資源一次看懂。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/autism-language.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>自閉症的孩子都不會說話嗎？認識自閉症的語言發展與早期療育</h3>
+          <p>自閉症和語言遲緩哪裡不同？溝通特徵、早期警訊與實證療育方向。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/swallowing-exercise.html">
+        <div class="article-body">
+          <span class="article-tag">吞嚥照護</span>
+          <h3>吞嚥訓練怎麼做？長輩在家可以練的吞嚥運動與注意事項</h3>
+          <p>舌頭阻抗、下巴夾球、用力吞嚥與呼吸肌訓練——實證吞嚥運動整理。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/speech-milestones.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>寶寶幾歲會說話？0–6歲語言發展里程碑對照表與遲緩警訊</h3>
+          <p>1歲說單字、2歲組短句、3歲說句子。完整對照表、紅旗警訊與評估管道。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/choking.html">
+        <div class="article-body">
+          <span class="article-tag">吞嚥照護</span>
+          <h3>吃東西常嗆到怎麼辦？嗆咳原因、就醫時機與預防方法</h3>
+          <p>嗆到與噎到的差別、緊急處理、就醫時機，與預防嗆咳的六個進食技巧。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/vocal-nodules.html">
+        <div class="article-body">
+          <span class="article-tag">嗓音保健</span>
+          <h3>聲帶長繭一定要開刀嗎？聲帶結節的症狀、治療與保養方法</h3>
+          <p>第一線治療通常不是手術。認識嗓音治療實證、開刀時機與保養原則。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/late-talker.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言</span>
+          <h3>兩歲還不太會說話，需要擔心嗎？</h3>
+          <p>認識「大雞晚啼」的迷思，以及語言發展遲緩的早期警訊與評估時機。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/dysphagia.html">
+        <div class="article-body">
+          <span class="article-tag">吞嚥照護</span>
+          <h3>長輩吃飯常嗆咳？吞嚥困難的居家觀察重點</h3>
+          <p>從用餐時間、咳嗽頻率到體重變化，掌握吞嚥障礙的六個觀察指標。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/voice-care.html">
+        <div class="article-body">
+          <span class="article-tag">嗓音保健</span>
+          <h3>聲音沙啞超過兩週？給用聲工作者的護嗓指南</h3>
+          <p>喝水、休聲、避免清喉嚨——簡單卻最有效的嗓音保健日常。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/articulation.html">
+        <div class="article-body">
+          <span class="article-tag">構音與音韻</span>
+          <h3>孩子說話「臭乳呆」？認識構音異常與處理時機</h3>
+          <p>哪些音不清楚是正常發展、哪些需要練習？認識構音異常的類型與評估時機。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/aphasia.html">
+        <div class="article-body">
+          <span class="article-tag">失語症</span>
+          <h3>中風後說不出話？認識失語症與溝通的橋梁</h3>
+          <p>失語症不是智力受損。認識類型、復健觀念，與家屬最需要的溝通技巧。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/aac.html">
+        <div class="article-body">
+          <span class="article-tag">溝通輔具</span>
+          <h3>當說話很困難，還有別的路：認識 AAC 溝通輔具</h3>
+          <p>圖卡、手勢到語音溝通 App。用了輔具會不會更不想說話？研究怎麼說。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/stuttering.html">
+        <div class="article-body">
+          <span class="article-tag">口吃與流暢度</span>
+          <h3>孩子說話結結巴巴？認識口吃與家長的應對之道</h3>
+          <p>幼兒口吃多數會自然恢復，但哪些孩子不能等？家長最該做與最不該做的事。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/bilingual.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>學兩種語言會讓孩子說話變慢嗎？雙語家庭的常見迷思</h3>
+          <p>雙語不會造成遲緩、混著講不是混淆。用研究證據回答多語家庭最常見的疑問。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/shared-reading.html">
+        <div class="article-body">
+          <span class="article-tag">兒童語言發展</span>
+          <h3>每天十分鐘的魔法：親子共讀如何促進語言發展</h3>
+          <p>怎麼讀比有沒有讀更重要。認識實證支持的對話式共讀技巧 CROWD 與 PEER。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/oral-motor.html">
+        <div class="article-body">
+          <span class="article-tag">構音與音韻</span>
+          <h3>吹泡泡、舔果醬能讓孩子說話更清楚嗎？口腔動作練習的迷思</h3>
+          <p>「練口腔肌肉改善發音」聽起來合理，研究卻不支持。認識真正有效的構音治療。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/dementia-eating.html">
+        <div class="article-body">
+          <span class="article-tag">吞嚥照護</span>
+          <h3>失智症長輩越來越不吃飯？進食困難的理解與照護</h3>
+          <p>含著不吞、忘記怎麼吃……理解原因、調整用餐策略，與鼻胃管的實證抉擇。</p>
+        </div>
+      </a>
+      <a class="article-card" href="articles/parkinson-voice.html">
+        <div class="article-body">
+          <span class="article-tag">嗓音保健</span>
+          <h3>帕金森氏症讓聲音越來越小？認識言語變化與大聲說話治療</h3>
+          <p>聲音變小不是不想說。認識帕金森氏症的言語症狀與 LSVT LOUD 的實證治療。</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Quote ===== -->
+<section class="quote">
+  <blockquote>「溝通不只是說話，<br>而是讓彼此的心，被聽見。」</blockquote>
+  <cite>— 語聲山語 衛教平台</cite>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <p class="kanji">常 見 問 題</p>
+      <h2>大家都在問</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>什麼情況需要找語言治療師？</summary>
+        <div class="faq-a">當孩子的語言發展明顯落後同齡、說話不清楚難以理解，或成人出現吞嚥困難、聲音沙啞超過兩週、中風後溝通困難等情形，都建議尋求語言治療師評估。</div>
+      </details>
+      <details class="faq-item">
+        <summary>語言治療需要醫師轉介嗎？</summary>
+        <div class="faq-a">在醫療院所接受語言治療通常需經醫師診察後轉介；自費的語言治療所則可直接預約評估。實際流程依各院所規定，建議先電話詢問。</div>
+      </details>
+      <details class="faq-item">
+        <summary>孩子講話「臭乳呆」長大會自己好嗎？</summary>
+        <div class="faq-a">部分構音問題會隨發展成熟而改善，但若四歲後仍有多數語音不清楚、影響溝通或學習，建議接受評估，及早練習效果更好。</div>
+      </details>
+      <details class="faq-item">
+        <summary>網站上的衛教資訊可以取代就醫嗎？</summary>
+        <div class="faq-a">不行。本站內容僅供衛教參考，無法取代專業評估與診斷。若您或家人有溝通、吞嚥相關困擾，請諮詢語言治療師或醫師。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 12 8 19a8 8 0 0 0 16 0c0-7-8-15-8-15z" fill="#b7c4a8" opacity=".6"/><path d="M16 9c0 0-5 5.5-5 10a5 5 0 0 0 10 0c0-4.5-5-10-5-10z" fill="#dde4d4"/></svg>
+          語聲山語
+        </div>
+        <p>沉靜溫柔的語言治療衛教平台。<br>本站內容僅供衛教參考，不能取代專業醫療評估與診斷。</p>
+      </div>
+      <div>
+        <h4>衛教主題</h4>
+        <a href="topics/child-language.html">兒童語言發展</a><br>
+        <a href="topics/articulation.html">構音與音韻</a><br>
+        <a href="topics/swallowing.html">吞嚥照護</a><br>
+        <a href="topics/voice.html">嗓音保健</a><br>
+        <a href="topics/aphasia.html">失語症與中風溝通</a><br>
+        <a href="topics/aac.html">溝通輔具與支持</a>
+      </div>
+      <div>
+        <h4>網站導覽</h4>
+        <a href="#about">關於語言治療</a><br>
+        <a href="#articles">最新文章</a><br>
+        <a href="#faq">常見問題</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p style="max-width:680px;margin:0 auto 12px;line-height:1.9;">本網站提供之資訊僅供一般教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。如有疑慮，請尋求合格專業人員協助。</p>
+      © 2026 語聲山語 語言治療衛教平台
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('menuBtn').addEventListener('click',function(){
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('#navLinks a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+</body>
+</html>
