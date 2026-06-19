@@ -1,0 +1,52 @@
+/* 語聲山語 — 縣市落地頁共用樣式 */
+:root{--mist:#eef1ea;--cloud:#f7f6f1;--tea-light:#b7c4a8;--tea:#7d8f6f;--tea-deep:#55674a;--pine:#3d4a38;--ink:#2e342b;--earth:#a98f6f;--paper:#fbfaf6;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--ink);background:var(--paper);line-height:1.9;font-weight:300;}
+h1,h2,h3{font-family:'Noto Serif TC',serif;font-weight:600;color:var(--pine);}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1000px;margin:0 auto;padding:0 24px;}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(125,143,111,.18);}
+.nav{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Noto Serif TC',serif;font-size:1.25rem;font-weight:700;color:var(--tea-deep);letter-spacing:.12em;}
+.logo svg{width:30px;height:30px;}
+.back-link{font-size:.9rem;color:var(--tea-deep);letter-spacing:.1em;border:1px solid var(--tea-light);padding:7px 18px;border-radius:2px;transition:all .3s;}
+.back-link:hover{background:var(--mist);}
+.page-hero{padding:140px 0 40px;background:linear-gradient(180deg,#e3e8d8,var(--paper));}
+.page-hero .crumbs{font-size:.8rem;letter-spacing:.06em;color:#6a7263;margin-bottom:14px;}
+.page-hero .crumbs a{color:#55674a;}
+.page-hero .kanji{font-size:.8rem;letter-spacing:.5em;color:var(--earth);margin-bottom:12px;font-weight:400;}
+.page-hero h1{font-size:clamp(1.6rem,3.6vw,2.2rem);letter-spacing:.06em;margin-bottom:14px;}
+.page-hero p{color:#5a6354;max-width:700px;font-size:.97rem;}
+main{padding:34px 0 80px;}
+.intro h2{font-size:1.3rem;letter-spacing:.08em;margin:30px 0 12px;}
+.intro p{color:#4f5848;font-size:.95rem;margin-bottom:12px;}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 8px;}
+.jump:empty{display:none;}
+.jump a{font-size:.85rem;color:var(--tea-deep);background:var(--cloud);border:1px solid rgba(125,143,111,.3);border-radius:20px;padding:6px 15px;transition:all .25s;}
+.jump a:hover{background:var(--mist);}
+.dist-block{margin-top:30px;}
+.dist-block h2{font-size:1.18rem;letter-spacing:.08em;padding-bottom:8px;border-bottom:1px solid rgba(125,143,111,.25);margin-bottom:14px;}
+.clinic-list{display:grid;gap:12px;}
+.clinic-card{background:var(--cloud);border:1px solid rgba(125,143,111,.2);border-radius:6px;padding:16px 18px;}
+.clinic-card .top{display:flex;align-items:flex-start;gap:10px;justify-content:space-between;flex-wrap:wrap;}
+.clinic-card h3{font-size:1.05rem;letter-spacing:.03em;line-height:1.5;}
+.clinic-card h3 a{border-bottom:1px solid transparent;transition:border-color .3s;}
+.clinic-card h3 a:hover{color:var(--tea-deep);border-color:var(--tea-light);}
+.tag{font-size:.7rem;letter-spacing:.1em;padding:3px 10px;border-radius:20px;white-space:nowrap;color:var(--tea-deep);background:var(--mist);border:1px solid var(--tea-light);}
+.svc{font-size:.85rem;color:#6a7263;margin:7px 0 10px;}
+.meta{display:grid;gap:5px;font-size:.88rem;}
+.meta a{color:var(--tea-deep);border-bottom:1px solid var(--tea-light);word-break:break-all;}
+.meta .muted{color:#9aa291;}
+.detail{display:inline-block;margin-top:10px;font-size:.8rem;letter-spacing:.14em;color:var(--earth);}
+.faq{margin-top:48px;}
+.faq h2{font-size:1.3rem;letter-spacing:.08em;margin-bottom:16px;}
+.faq details{background:var(--cloud);border:1px solid rgba(125,143,111,.22);border-radius:6px;padding:4px 20px;margin-bottom:12px;}
+.faq summary{font-family:'Noto Serif TC',serif;font-size:1rem;color:var(--pine);cursor:pointer;padding:14px 0;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{content:"問　";color:var(--earth);font-weight:600;}
+.faq .ans{padding:0 0 14px;color:#4f5848;font-size:.93rem;}
+.disclaimer{margin-top:40px;font-size:.8rem;color:#8a957f;line-height:1.9;background:var(--cloud);border:1px dashed rgba(125,143,111,.3);border-radius:6px;padding:16px 20px;}
+footer{background:var(--pine);color:#aab5a0;padding:36px 0;text-align:center;font-size:.82rem;letter-spacing:.1em;}
+footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
+@media(max-width:600px){.page-hero{padding:120px 0 32px;}}
