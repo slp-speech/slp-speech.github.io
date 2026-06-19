@@ -1,4 +1,4 @@
-/* 語聲山語 — 分區落地頁清單渲染（讀 window.AREA_REGION，依縣市與行政區分組） */
+/* 語聲山語 — 分區落地頁渲染：列出該區各縣市卡片，點擊進入該縣市專頁 */
 (function(){
   var REGION=window.AREA_REGION;
   var CITY_ORDER=window.AREA_CITY_ORDER||[];
@@ -10,8 +10,6 @@
     "金門縣":"kinmen","宜蘭縣":"yilan","花蓮縣":"hualien","臺東縣":"taitung" };
   var data=(window.CLINIC_DATA||[]).filter(function(c){return c.region===REGION;});
   function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-  function mapUrl(c){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(c.name+" "+c.address);}
-  function telHref(p){return "tel:"+p.replace(/[^0-9+#]/g,"");}
 
   var byCity={};
   data.forEach(function(c){(byCity[c.city]=byCity[c.city]||[]).push(c);});
@@ -21,38 +19,22 @@
     return a.localeCompare(b,"zh-Hant");
   });
 
-  // 縣市快速跳轉
-  var jump=document.getElementById("jump");
-  if(jump)jump.innerHTML=cities.map(function(ci){return '<a href="#c-'+encodeURIComponent(ci)+'">'+esc(ci)+'<span style="opacity:.6;margin-left:4px;">'+byCity[ci].length+'</span></a>';}).join("");
-
-  function cardHtml(c){
-    var tagText=c.dedicated?"語言治療所":"設語言治療服務";
-    var phone=c.phone?'<div><a href="'+telHref(c.phone)+'">'+esc(c.phone)+'</a></div>':'<div class="muted">電話請見官網或來電查詢</div>';
-    var web=c.url?'<div><a href="'+esc(c.url)+'" target="_blank" rel="noopener">官方網站</a></div>':'';
-    return '<div class="clinic-card">'+
-      '<div class="top"><h3><a href="'+esc(c.id)+'.html">'+esc(c.name)+'</a></h3><span class="tag">'+tagText+'</span></div>'+
-      '<div class="svc">'+esc(c.services)+'</div>'+
-      '<div class="meta"><div><a href="'+mapUrl(c)+'" target="_blank" rel="noopener">'+esc(c.address)+'</a></div>'+phone+web+'</div>'+
-      '<a class="detail" href="'+esc(c.id)+'.html">查看院所詳情 →</a>'+
-    '</div>';
-  }
-
-  var html=cities.map(function(ci){
+  var cards=cities.map(function(ci){
     var list=byCity[ci];
-    // 依行政區分組
-    var byDist={};
-    list.forEach(function(c){(byDist[c.district]=byDist[c.district]||[]).push(c);});
-    var dists=Object.keys(byDist).sort(function(a,b){return a.localeCompare(b,"zh-Hant");});
-    var inner=dists.map(function(d){
-      return '<h3 style="font-size:1rem;color:var(--tea-deep);letter-spacing:.05em;margin:18px 0 10px;">'+esc(d)+'（'+byDist[d].length+'）</h3>'+
-        '<div class="clinic-list">'+byDist[d].map(cardHtml).join("")+'</div>';
-    }).join("");
+    // 行政區清單（去重，保留資料順序）
+    var seen={},dists=[];
+    list.forEach(function(c){if(!seen[c.district]){seen[c.district]=1;dists.push(c.district);}});
     var slug=SLUG[ci];
-    var head=slug
-      ? '<h2><a href="'+slug+'.html" style="border-bottom:1px solid var(--tea-light);">'+esc(ci)+'</a>（'+list.length+' 間）</h2>'
-      : '<h2>'+esc(ci)+'（'+list.length+' 間）</h2>';
-    return '<section class="dist-block" id="c-'+encodeURIComponent(ci)+'">'+head+inner+'</section>';
+    var distText=dists.join("、");
+    var inner=
+      '<div class="cc-name">'+esc(ci)+'<span class="cc-count">'+list.length+' 間</span></div>'+
+      '<div class="cc-dist">'+esc(distText)+'</div>'+
+      '<div class="cc-go">查看 '+esc(ci)+' 語言治療所與醫院 →</div>';
+    return slug
+      ? '<a class="city-link-card" href="'+slug+'.html">'+inner+'</a>'
+      : '<div class="city-link-card">'+inner+'</div>';
   }).join("");
+
   var areas=document.getElementById("areas");
-  if(areas)areas.innerHTML=html;
+  if(areas)areas.innerHTML='<div class="city-grid">'+cards+'</div>';
 })();

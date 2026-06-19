@@ -12,19 +12,28 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,2
 .logo svg{width:30px;height:30px;}
 .back-link{font-size:.9rem;color:var(--tea-deep);letter-spacing:.1em;border:1px solid var(--tea-light);padding:7px 18px;border-radius:2px;transition:all .3s;}
 .back-link:hover{background:var(--mist);}
-.page-hero{padding:140px 0 40px;background:linear-gradient(180deg,#e3e8d8,var(--paper));}
+.page-hero{padding:128px 0 24px;background:linear-gradient(180deg,#e3e8d8,var(--paper));}
 .page-hero .crumbs{font-size:.8rem;letter-spacing:.06em;color:#6a7263;margin-bottom:14px;}
 .page-hero .crumbs a{color:#55674a;}
 .page-hero .kanji{font-size:.8rem;letter-spacing:.5em;color:var(--earth);margin-bottom:12px;font-weight:400;}
 .page-hero h1{font-size:clamp(1.6rem,3.6vw,2.2rem);letter-spacing:.06em;margin-bottom:14px;}
 .page-hero p{color:#5a6354;max-width:700px;font-size:.97rem;}
-main{padding:34px 0 80px;}
-.intro h2{font-size:1.3rem;letter-spacing:.08em;margin:30px 0 12px;}
+main{padding:24px 0 80px;}
+.intro h2{font-size:1.3rem;letter-spacing:.08em;margin:6px 0 12px;}
 .intro p{color:#4f5848;font-size:.95rem;margin-bottom:12px;}
 .jump{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 8px;}
 .jump:empty{display:none;}
 .jump a{font-size:.85rem;color:var(--tea-deep);background:var(--cloud);border:1px solid rgba(125,143,111,.3);border-radius:20px;padding:6px 15px;transition:all .25s;}
 .jump a:hover{background:var(--mist);}
+/* 分區頁：縣市卡片 */
+.city-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:6px;}
+.city-link-card{display:block;background:var(--cloud);border:1px solid rgba(125,143,111,.25);border-radius:6px;padding:18px 20px;transition:box-shadow .3s,transform .3s,border-color .3s;}
+.city-link-card:hover{box-shadow:0 14px 30px -18px rgba(61,74,56,.3);transform:translateY(-2px);border-color:var(--tea-light);}
+.city-link-card .cc-name{font-family:'Noto Serif TC',serif;font-size:1.15rem;color:var(--pine);}
+.city-link-card .cc-count{font-size:.82rem;color:var(--earth);letter-spacing:.05em;margin-left:8px;}
+.city-link-card .cc-dist{font-size:.82rem;color:#6a7263;margin:8px 0 12px;line-height:1.7;}
+.city-link-card .cc-go{font-size:.82rem;letter-spacing:.12em;color:var(--tea-deep);}
+
 .dist-block{margin-top:30px;}
 .dist-block h2{font-size:1.18rem;letter-spacing:.08em;padding-bottom:8px;border-bottom:1px solid rgba(125,143,111,.25);margin-bottom:14px;}
 .clinic-list{display:grid;gap:12px;}
