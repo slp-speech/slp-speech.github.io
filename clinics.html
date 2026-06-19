@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BRTBQSC');</script>
+<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>語言治療醫療院所一覽：北中南東分區查詢｜語聲山語</title>
+<meta name="description" content="全台語言治療醫療院所分區查詢：依北區、中區、南區、東區與各行政區整理語言治療所與院所，提供地址（可開啟 Google 地圖）、電話與官網連結。">
+<link rel="canonical" href="https://talkingslp.com/clinics.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="語言治療醫療院所一覽：北中南東分區查詢">
+<meta property="og:description" content="依分區與行政區查詢語言治療所與院所，含地址、電話與官網。">
+<meta property="og:image" content="https://talkingslp.com/og-image.png">
+<meta property="og:locale" content="zh_TW">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"語言治療醫療院所一覽","url":"https://talkingslp.com/clinics.html","inLanguage":"zh-Hant","description":"全台語言治療所與醫療院所分區名錄。"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://talkingslp.com/"},{"@type":"ListItem","position":2,"name":"醫療院所"}]}
+</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#eef1ea;--cloud:#f7f6f1;--tea-light:#b7c4a8;--tea:#7d8f6f;
+  --tea-deep:#55674a;--pine:#3d4a38;--ink:#2e342b;--earth:#a98f6f;--paper:#fbfaf6;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Noto Sans TC',sans-serif;color:var(--ink);background:var(--paper);line-height:1.9;font-weight:300;}
+h1,h2,h3{font-family:'Noto Serif TC',serif;font-weight:600;color:var(--pine);}
+a{color:inherit;text-decoration:none;}
+.container{max-width:1000px;margin:0 auto;padding:0 24px;}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,246,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(125,143,111,.18);}
+.nav{max-width:1100px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:68px;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Noto Serif TC',serif;font-size:1.25rem;font-weight:700;color:var(--tea-deep);letter-spacing:.12em;}
+.logo svg{width:30px;height:30px;}
+.back-link{font-size:.9rem;color:var(--tea-deep);letter-spacing:.1em;border:1px solid var(--tea-light);padding:7px 18px;border-radius:2px;transition:all .3s;}
+.back-link:hover{background:var(--mist);}
+.page-hero{padding:140px 0 40px;background:linear-gradient(180deg,#e3e8d8,var(--paper));}
+.page-hero .crumbs{font-size:.8rem;letter-spacing:.06em;color:#6a7263;margin-bottom:14px;}
+.page-hero .crumbs a{color:#55674a;}
+.page-hero .kanji{font-size:.8rem;letter-spacing:.5em;color:var(--earth);margin-bottom:12px;font-weight:400;}
+.page-hero h1{font-size:clamp(1.6rem,3.6vw,2.2rem);letter-spacing:.08em;margin-bottom:14px;}
+.page-hero p{color:#5a6354;max-width:680px;font-size:.97rem;}
+main{padding:34px 0 80px;}
+
+/* region tabs */
+.regions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}
+.region-btn{
+  font-family:'Noto Serif TC',serif;font-size:1rem;letter-spacing:.18em;color:var(--tea-deep);
+  background:var(--cloud);border:1px solid rgba(125,143,111,.3);border-radius:3px;
+  padding:12px 10px;cursor:pointer;transition:all .25s;text-align:center;
+}
+.region-btn:hover{background:var(--mist);}
+.region-btn.active{background:var(--tea-deep);color:var(--cloud);border-color:var(--tea-deep);}
+
+/* city tabs (second level) */
+.cities{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px;}
+.cities:empty{display:none;}
+.city-chip{
+  font-family:'Noto Serif TC',serif;font-size:.95rem;letter-spacing:.1em;color:var(--tea-deep);
+  background:var(--cloud);border:1px solid rgba(125,143,111,.3);border-radius:3px;
+  padding:8px 20px;cursor:pointer;transition:all .25s;
+}
+.city-chip:hover{background:var(--mist);}
+.city-chip.active{background:var(--earth);color:#fff;border-color:var(--earth);}
+.city-chip .n{opacity:.75;font-size:.8rem;margin-left:5px;}
+
+/* district chips */
+.districts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid rgba(125,143,111,.25);}
+.districts:empty{display:none;}
+.dist-chip{
+  font-size:.86rem;letter-spacing:.04em;color:var(--tea-deep);
+  background:#fff;border:1px solid rgba(125,143,111,.3);border-radius:20px;
+  padding:6px 15px;cursor:pointer;transition:all .25s;white-space:nowrap;
+}
+.dist-chip:hover{background:var(--mist);}
+.dist-chip.active{background:var(--tea);color:#fff;border-color:var(--tea);}
+.dist-chip .n{opacity:.7;font-size:.78rem;margin-left:4px;}
+
+.result-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:18px;}
+.result-head h2{font-size:1.2rem;letter-spacing:.1em;}
+.result-head .count{font-size:.85rem;color:#8a957f;letter-spacing:.05em;}
+
+/* clinic cards */
+.clinic-list{display:grid;gap:14px;}
+.clinic-card{
+  background:var(--cloud);border:1px solid rgba(125,143,111,.2);border-radius:6px;
+  padding:20px 22px;transition:box-shadow .3s,transform .3s;position:relative;
+}
+.clinic-card:hover{box-shadow:0 14px 30px -18px rgba(61,74,56,.3);transform:translateY(-2px);}
+.clinic-card .top{display:flex;align-items:flex-start;gap:12px;justify-content:space-between;flex-wrap:wrap;}
+.clinic-card h3{font-size:1.12rem;letter-spacing:.04em;line-height:1.5;}
+.clinic-card h3 a:hover{color:var(--tea-deep);border-bottom:1px solid var(--tea-light);}
+.tag{font-size:.72rem;letter-spacing:.1em;padding:3px 10px;border-radius:20px;white-space:nowrap;}
+.tag.slp{color:var(--tea-deep);background:var(--mist);border:1px solid var(--tea-light);}
+.tag.med{color:var(--tea-deep);background:var(--mist);border:1px solid rgba(125,143,111,.3);}
+.clinic-card .svc{font-size:.86rem;color:#6a7263;margin:8px 0 14px;}
+.info{display:grid;gap:7px;font-size:.9rem;}
+.info .row{display:flex;gap:10px;align-items:flex-start;}
+.info .ic{width:18px;flex:none;color:var(--tea);margin-top:3px;}
+.info .ic svg{width:16px;height:16px;display:block;stroke:var(--tea);fill:none;stroke-width:1.6;}
+.info a{color:var(--tea-deep);border-bottom:1px solid var(--tea-light);word-break:break-all;}
+.info a:hover{color:var(--pine);}
+.info .muted{color:#9aa291;}
+.detail-link{display:inline-block;margin-top:14px;font-size:.82rem;letter-spacing:.16em;color:var(--earth);border-bottom:1px solid transparent;transition:border-color .3s;}
+.clinic-card:hover .detail-link{border-color:var(--earth);}
+
+/* pagination */
+.pager{display:flex;justify-content:center;align-items:center;gap:6px;margin-top:34px;flex-wrap:wrap;}
+.pager button{
+  min-width:38px;height:38px;padding:0 10px;border:1px solid rgba(125,143,111,.35);
+  background:#fff;color:var(--tea-deep);border-radius:3px;cursor:pointer;font-size:.9rem;transition:all .2s;
+}
+.pager button:hover:not(:disabled){background:var(--mist);}
+.pager button.active{background:var(--tea-deep);color:#fff;border-color:var(--tea-deep);}
+.pager button:disabled{opacity:.4;cursor:not-allowed;}
+.pager .pginfo{font-size:.82rem;color:#8a957f;margin:0 8px;}
+
+.disclaimer{margin-top:40px;font-size:.8rem;color:#8a957f;line-height:1.9;background:var(--cloud);border:1px dashed rgba(125,143,111,.3);border-radius:6px;padding:16px 20px;}
+footer{background:var(--pine);color:#aab5a0;padding:36px 0;text-align:center;font-size:.82rem;letter-spacing:.1em;}
+footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
+@media(max-width:600px){
+  .page-hero{padding:120px 0 32px;}
+  .regions{grid-template-columns:repeat(2,1fr);gap:10px;}
+  .region-btn{padding:11px 8px;font-size:.92rem;letter-spacing:.1em;}
+  .clinic-card{padding:17px 16px;}
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BRTBQSC" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header>
+  <div class="nav">
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 32 32" fill="none"><path d="M16 4C16 4 8 12 8 19a8 8 0 0 0 16 0c0-7-8-15-8-15z" fill="#7d8f6f" opacity=".5"/><path d="M16 9c0 0-5 5.5-5 10a5 5 0 0 0 10 0c0-4.5-5-10-5-10z" fill="#55674a"/></svg>
+      語聲山語
+    </a>
+    <a class="back-link" href="index.html">← 回首頁</a>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <nav class="crumbs"><a href="index.html">首頁</a> › <span>醫療院所</span></nav>
+    <p class="kanji">醫 療 院 所</p>
+    <h1>語言治療醫療院所一覽</h1>
+    <p>依北區、中區、南區、東區與各行政區整理提供語言治療服務的治療所與院所。點選地址可開啟 Google 地圖、點選電話可直接撥號。資料整理自公開來源，就診前仍請先電話或上官網確認服務內容與時段。</p>
+  </div>
+</div>
+
+<main>
+  <div class="container">
+    <div class="regions" id="regions"></div>
+    <div class="cities" id="cities"></div>
+    <div class="districts" id="districts"></div>
+    <div class="result-head">
+      <h2 id="resultTitle">　</h2>
+      <span class="count" id="resultCount"></span>
+    </div>
+    <div class="clinic-list" id="clinicList"></div>
+    <div class="pager" id="pager"></div>
+
+    <div class="disclaimer">
+      ※ 本名錄為衛教資源整理，非醫療推薦或背書；院所資訊（地址、電話、服務）可能異動，請以各院所最新公告為準。語言治療所多採自費並需事先預約。若資料有誤或需新增院所，歡迎來信告知。分區依一般地理慣例：北區（北北基桃竹）、中區（中苗彰投雲）、南區（嘉南高屏澎）、東區（宜花東）。
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p style="font-size:.8rem;line-height:1.9;color:#8a957f;max-width:680px;margin:0 auto 14px;">本網站提供之資訊僅供一般教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。如有疑慮，請尋求合格專業人員協助。</p>
+    © 2026 語聲山語 語言治療衛教平台 · <a href="index.html">回首頁</a>
+  </div>
+</footer>
+
+<script src="clinics/clinics-data.js"></script>
+<script>
+const REGIONS=[
+  {key:"north",label:"北　區"},
+  {key:"central",label:"中　區"},
+  {key:"south",label:"南　區"},
+  {key:"east",label:"東　區"}
+];
+const PER_PAGE=10;
+const data=window.CLINIC_DATA||[];
+let state={region:"north",city:"__all__",district:"__all__",page:1};
+const CITY_ORDER=["臺北市","新北市","桃園市","新竹市","新竹縣","基隆市",
+  "臺中市","苗栗縣","彰化縣","南投縣","雲林縣",
+  "臺南市","高雄市","嘉義市","嘉義縣","屏東縣","澎湖縣","金門縣",
+  "宜蘭縣","花蓮縣","臺東縣"];
+
+function mapUrl(c){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(c.name+" "+c.address);}
+function telHref(p){return "tel:"+p.replace(/[^0-9+#]/g,"");}
+function byRegion(r){return data.filter(c=>c.region===r);}
+function inScope(){
+  let list=byRegion(state.region);
+  if(state.city!=="__all__"){list=list.filter(c=>c.city===state.city);}
+  return list;
+}
+function citiesOf(r){
+  const map={};byRegion(r).forEach(c=>{map[c.city]=(map[c.city]||0)+1;});
+  const keys=Object.keys(map).sort((a,b)=>{
+    const ia=CITY_ORDER.indexOf(a),ib=CITY_ORDER.indexOf(b);
+    if(ia!==-1&&ib!==-1)return ia-ib;
+    if(ia!==-1)return -1; if(ib!==-1)return 1;
+    return a.localeCompare(b,'zh-Hant');
+  });
+  return keys.map(k=>({key:k,count:map[k]}));
+}
+function districtsOfCity(r,city){
+  const map={};byRegion(r).filter(c=>c.city===city).forEach(c=>{map[c.district]=(map[c.district]||0)+1;});
+  return Object.keys(map).sort((a,b)=>a.localeCompare(b,'zh-Hant')).map(k=>({key:k,count:map[k]}));
+}
+function currentList(){
+  let list=inScope();
+  if(state.city!=="__all__"&&state.district!=="__all__"){list=list.filter(c=>c.district===state.district);}
+  return list;
+}
+
+function renderRegions(){
+  const el=document.getElementById("regions");el.innerHTML="";
+  REGIONS.forEach(r=>{
+    const b=document.createElement("button");
+    b.className="region-btn"+(r.key===state.region?" active":"");
+    b.textContent=r.label+"（"+byRegion(r.key).length+"）";
+    b.onclick=()=>{state.region=r.key;state.city="__all__";state.district="__all__";state.page=1;state._scroll=true;renderAll();};
+    el.appendChild(b);
+  });
+}
+function renderCities(){
+  const el=document.getElementById("cities");el.innerHTML="";
+  const all=document.createElement("button");
+  all.className="city-chip"+(state.city==="__all__"?" active":"");
+  all.innerHTML="全部縣市<span class='n'>"+byRegion(state.region).length+"</span>";
+  all.onclick=()=>{state.city="__all__";state.district="__all__";state.page=1;state._scroll=true;renderAll();};
+  el.appendChild(all);
+  citiesOf(state.region).forEach(c=>{
+    const b=document.createElement("button");
+    b.className="city-chip"+(state.city===c.key?" active":"");
+    b.innerHTML=c.key+"<span class='n'>"+c.count+"</span>";
+    b.onclick=()=>{state.city=c.key;state.district="__all__";state.page=1;state._scroll=true;renderAll();};
+    el.appendChild(b);
+  });
+}
+function renderDistricts(){
+  const el=document.getElementById("districts");el.innerHTML="";
+  if(state.city==="__all__")return; // 先選縣市才出現行政區
+  const all=document.createElement("button");
+  all.className="dist-chip"+(state.district==="__all__"?" active":"");
+  all.innerHTML="全部<span class='n'>"+inScope().length+"</span>";
+  all.onclick=()=>{state.district="__all__";state.page=1;state._scroll=true;renderAll();};
+  el.appendChild(all);
+  districtsOfCity(state.region,state.city).forEach(d=>{
+    const b=document.createElement("button");
+    b.className="dist-chip"+(state.district===d.key?" active":"");
+    b.innerHTML=d.key+"<span class='n'>"+d.count+"</span>";
+    b.onclick=()=>{state.district=d.key;state.page=1;state._scroll=true;renderAll();};
+    el.appendChild(b);
+  });
+}
+function clinicCard(c){
+  const tag=c.dedicated?'<span class="tag slp">語言治療所</span>':'<span class="tag med">設語言治療</span>';
+  const phone=c.phone?'<a href="'+telHref(c.phone)+'">'+c.phone+'</a>':'<span class="muted">電話請見官網或來電查詢</span>';
+  const web=c.url?'<div class="row"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg></span><a href="'+c.url+'" target="_blank" rel="noopener">官方網站</a></div>':"";
+  return '<div class="clinic-card">'+
+    '<div class="top"><h3><a href="clinics/'+c.id+'.html">'+c.name+'</a></h3>'+tag+'</div>'+
+    '<p class="svc">'+c.services+'</p>'+
+    '<div class="info">'+
+      '<div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span><a href="'+mapUrl(c)+'" target="_blank" rel="noopener">'+c.address+'</a></div>'+
+      '<div class="row"><span class="ic"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>'+phone+'</div>'+
+      web+
+    '</div>'+
+    '<a class="detail-link" href="clinics/'+c.id+'.html">查看院所詳情 →</a>'+
+  '</div>';
+}
+function renderList(){
+  const list=currentList();
+  const regionName=REGIONS.find(r=>r.key===state.region).label.replace(/　/g,"");
+  let title;
+  if(state.city==="__all__")title=regionName+" · 全部院所";
+  else if(state.district==="__all__")title=state.city+" · 全部院所";
+  else title=state.city+state.district;
+  document.getElementById("resultTitle").textContent=title;
+  document.getElementById("resultCount").textContent="共 "+list.length+" 間";
+  const totalPages=Math.max(1,Math.ceil(list.length/PER_PAGE));
+  if(state.page>totalPages)state.page=totalPages;
+  const start=(state.page-1)*PER_PAGE;
+  const pageItems=list.slice(start,start+PER_PAGE);
+  document.getElementById("clinicList").innerHTML=pageItems.map(clinicCard).join("")||'<p style="color:#8a957f;">此區暫無收錄資料，敬請期待後續更新。</p>';
+  renderPager(totalPages);
+  if(state._scroll){window.scrollTo({top:document.querySelector('.regions').offsetTop-90,behavior:'smooth'});}
+}
+function renderPager(totalPages){
+  const el=document.getElementById("pager");el.innerHTML="";
+  if(totalPages<=1)return;
+  const mk=(label,page,opts={})=>{
+    const b=document.createElement("button");b.textContent=label;
+    if(opts.active)b.className="active";
+    if(opts.disabled)b.disabled=true;
+    if(!opts.disabled&&!opts.active)b.onclick=()=>{state.page=page;state._scroll=true;renderList();};
+    if(opts.active)b.onclick=()=>{};
+    return b;
+  };
+  el.appendChild(mk("‹ 上一頁",state.page-1,{disabled:state.page===1}));
+  const info=document.createElement("span");info.className="pginfo";
+  for(let p=1;p<=totalPages;p++){el.appendChild(mk(String(p),p,{active:p===state.page}));}
+  el.appendChild(mk("下一頁 ›",state.page+1,{disabled:state.page===totalPages}));
+}
+function renderAll(){renderRegions();renderCities();renderDistricts();renderList();}
+
+// 支援以 ?region=north&city=臺北市&district=大安區 進入（亦相容舊式 district=「臺北市 大安區」）
+(function(){
+  const q=new URLSearchParams(location.search);
+  if(q.get("region")&&REGIONS.some(r=>r.key===q.get("region")))state.region=q.get("region");
+  if(q.get("city"))state.city=q.get("city");
+  if(q.get("district")){
+    let d=q.get("district");
+    if(d.indexOf(" ")>-1){const p=d.split(" ");state.city=p[0];state.district=p.slice(1).join(" ");}
+    else state.district=d;
+  }
+  renderAll();
+})();
+</script>
+</body>
+</html>
