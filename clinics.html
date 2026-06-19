@@ -61,6 +61,13 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,2
 .page-hero p{color:#5a6354;max-width:680px;font-size:.97rem;}
 main{padding:34px 0 80px;}
 
+/* 地區介紹專頁捷徑 */
+.area-nav{margin:0 0 24px;padding:16px 18px;background:var(--cloud);border:1px solid rgba(125,143,111,.25);border-radius:6px;}
+.area-nav .lbl{font-size:.85rem;color:#6a7263;letter-spacing:.06em;margin-bottom:10px;}
+.area-nav .links{display:flex;flex-wrap:wrap;gap:8px;}
+.area-nav a{font-family:'Noto Serif TC',serif;font-size:.95rem;letter-spacing:.14em;color:var(--tea-deep);background:#fff;border:1px solid var(--tea-light);border-radius:3px;padding:8px 22px;transition:all .25s;}
+.area-nav a:hover{background:var(--tea-deep);color:#fff;border-color:var(--tea-deep);}
+
 /* region tabs */
 .regions{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;}
 .region-btn{
@@ -188,6 +195,15 @@ footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
 
 <main>
   <div class="container">
+    <div class="area-nav">
+      <div class="lbl">地區介紹專頁　|　依分區查看在地說明與完整名單</div>
+      <div class="links">
+        <a href="clinics/north.html">北區</a>
+        <a href="clinics/central.html">中區</a>
+        <a href="clinics/south.html">南區</a>
+        <a href="clinics/east.html">東區</a>
+      </div>
+    </div>
     <div class="regions" id="regions"></div>
     <div class="cities" id="cities"></div>
     <div class="districts" id="districts"></div>
