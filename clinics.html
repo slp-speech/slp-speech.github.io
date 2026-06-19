@@ -24,6 +24,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://talkingslp.com/"},{"@type":"ListItem","position":2,"name":"醫療院所"}]}
 </script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"小孩說話慢、發音不清楚，該看哪一科？","acceptedAnswer":{"@type":"Answer","text":"可先掛兒童復健科或兒童心智科評估，由醫師或語言治療師判斷是否需要語言治療；各縣市也設有兒童發展聯合評估中心。若已確定需求，也可直接洽詢設有語言治療的醫院復健科或語言治療所。"}},
+{"@type":"Question","name":"語言治療是健保還是自費？費用大約多少？","acceptedAnswer":{"@type":"Answer","text":"醫院與部分診所的語言治療可由健保給付（需符合條件並由醫師開立）；獨立的語言治療所多為自費，常見行情約每堂（30–50分鐘）新台幣800至1,500元不等，依地區、時段與個別／團體而異，實際以各院所公告為準。"}},
+{"@type":"Question","name":"語言治療所和醫院的語言治療有什麼不同？","acceptedAnswer":{"@type":"Answer","text":"醫院復健科多可走健保、適合需要醫療評估或同時做物理／職能治療的個案，但常需排隊；語言治療所多為自費、預約彈性、課程較密集，適合希望穩定且密集訓練者。兩者可互相搭配。"}},
+{"@type":"Question","name":"成人中風或失語症也能做語言治療嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。語言治療不只服務兒童，也涵蓋成人中風後失語症、吞嚥障礙、嗓音與構音問題。本名錄中許多醫院復健科同時提供成人語言治療服務。"}},
+{"@type":"Question","name":"如何挑選合適的語言治療單位？","acceptedAnswer":{"@type":"Answer","text":"建議考量：離家或學校的距離與交通、可預約時段、是否為健保或自費、治療師專長（兒童早療、構音、口吃、吞嚥、嗓音），並先電話確認需求是否相符與等候時間。"}}
+]}
+</script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -126,6 +135,23 @@ main{padding:34px 0 80px;}
 .pager .pginfo{font-size:.82rem;color:#8a957f;margin:0 8px;}
 
 .disclaimer{margin-top:40px;font-size:.8rem;color:#8a957f;line-height:1.9;background:var(--cloud);border:1px dashed rgba(125,143,111,.3);border-radius:6px;padding:16px 20px;}
+
+/* SEO 內容區：選擇指南 + 常見問答 */
+.guide{margin-top:56px;border-top:1px solid rgba(125,143,111,.25);padding-top:40px;}
+.guide h2,.faq h2{font-size:1.35rem;letter-spacing:.08em;margin-bottom:16px;}
+.guide h3{font-size:1.05rem;letter-spacing:.05em;color:var(--tea-deep);margin:22px 0 8px;}
+.guide p{color:#4f5848;font-size:.95rem;margin-bottom:12px;}
+.guide ul{margin:0 0 12px;padding-left:1.2em;color:#4f5848;font-size:.95rem;}
+.guide a{color:var(--tea-deep);border-bottom:1px solid var(--tea-light);}
+.guide a:hover{color:var(--pine);}
+.guide li{margin-bottom:7px;}
+.faq{margin-top:48px;}
+.faq details{background:var(--cloud);border:1px solid rgba(125,143,111,.22);border-radius:6px;padding:4px 20px;margin-bottom:12px;}
+.faq summary{font-family:'Noto Serif TC',serif;font-size:1rem;color:var(--pine);cursor:pointer;padding:14px 0;list-style:none;}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{content:"問　";color:var(--earth);font-weight:600;}
+.faq details[open] summary{border-bottom:1px solid rgba(125,143,111,.2);}
+.faq .ans{padding:14px 0;color:#4f5848;font-size:.93rem;line-height:1.9;}
 footer{background:var(--pine);color:#aab5a0;padding:36px 0;text-align:center;font-size:.82rem;letter-spacing:.1em;}
 footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
 @media(max-width:600px){
@@ -175,6 +201,69 @@ footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
     <div class="disclaimer">
       ※ 本名錄為衛教資源整理，非醫療推薦或背書；院所資訊（地址、電話、服務）可能異動，請以各院所最新公告為準。語言治療所多採自費並需事先預約。若資料有誤或需新增院所，歡迎來信告知。分區依一般地理慣例：北區（北北基桃竹）、中區（中苗彰投雲）、南區（嘉南高屏澎）、東區（宜花東）。
     </div>
+
+    <section class="guide">
+      <h2>如何尋找與選擇語言治療服務</h2>
+      <p>「語言治療」協助的對象很廣，包括兒童語言發展遲緩、構音（口齒不清）、口吃、聽損後的溝通訓練，以及成人中風後的失語症、吞嚥障礙與嗓音問題。提供服務的單位主要分成兩類，了解差異有助於找到合適的資源。</p>
+
+      <h3>語言治療所（多為自費）</h3>
+      <p>以語言治療為主要服務的獨立治療所，預約時間較有彈性、課程通常較密集，適合希望穩定且持續訓練的家庭。費用多為自費，常見約每堂 800–1,500 元，依地區、時段與個別／團體課程而異。</p>
+
+      <h3>醫院與診所復健科（多可健保）</h3>
+      <p>設有語言治療的醫院或復健科診所，符合條件並經醫師開立者可由健保給付，也方便同時安排物理治療、職能治療或聯合評估；但熱門院所常需排隊候診。本名錄同時收錄這兩類單位，並以標籤區分「語言治療所」與「設語言治療服務」。</p>
+
+      <h3>第一次該怎麼開始？</h3>
+      <ul>
+        <li>不確定孩子是否需要時，可先到兒童復健科、兒童心智科或各縣市「兒童發展聯合評估中心」評估。</li>
+        <li>已確定需求，可直接從上方依縣市、行政區篩選離家近的院所，點電話先確認等候時間與是否符合需求。</li>
+        <li>語言治療重視持續性，建議將交通便利性與可預約時段一併納入考量。</li>
+      </ul>
+    </section>
+
+    <section class="guide" style="border-top:none;padding-top:0;margin-top:30px;">
+      <h3>分區與各縣市專頁</h3>
+      <p>分區總覽：
+        <a href="clinics/north.html">北區</a>、
+        <a href="clinics/central.html">中區</a>、
+        <a href="clinics/south.html">南區</a>、
+        <a href="clinics/east.html">東區</a>。各縣市專頁（含在地說明、健保／自費差異與行政區分類）：</p>
+      <p style="line-height:2.4;">
+        <strong>北區：</strong>
+        <a href="clinics/taipei.html">台北市</a>、
+        <a href="clinics/newtaipei.html">新北市</a>、
+        <a href="clinics/taoyuan.html">桃園市</a>、
+        <a href="clinics/hsinchu-city.html">新竹市</a>、
+        <a href="clinics/hsinchu-county.html">新竹縣</a>、
+        <a href="clinics/keelung.html">基隆市</a><br>
+        <strong>中區：</strong>
+        <a href="clinics/taichung.html">台中市</a>、
+        <a href="clinics/miaoli.html">苗栗縣</a>、
+        <a href="clinics/changhua.html">彰化縣</a>、
+        <a href="clinics/nantou.html">南投縣</a>、
+        <a href="clinics/yunlin.html">雲林縣</a><br>
+        <strong>南區：</strong>
+        <a href="clinics/chiayi-city.html">嘉義市</a>、
+        <a href="clinics/chiayi-county.html">嘉義縣</a>、
+        <a href="clinics/tainan.html">台南市</a>、
+        <a href="clinics/kaohsiung.html">高雄市</a>、
+        <a href="clinics/pingtung.html">屏東縣</a>、
+        <a href="clinics/penghu.html">澎湖縣</a>、
+        <a href="clinics/kinmen.html">金門縣</a><br>
+        <strong>東區：</strong>
+        <a href="clinics/yilan.html">宜蘭縣</a>、
+        <a href="clinics/hualien.html">花蓮縣</a>、
+        <a href="clinics/taitung.html">台東縣</a>
+      </p>
+    </section>
+
+    <section class="faq">
+      <h2>常見問題</h2>
+      <details><summary>小孩說話慢、發音不清楚，該看哪一科？</summary><div class="ans">可先掛兒童復健科或兒童心智科評估，由醫師或語言治療師判斷是否需要語言治療；各縣市也設有兒童發展聯合評估中心。若已確定需求，也可直接洽詢設有語言治療的醫院復健科或語言治療所。</div></details>
+      <details><summary>語言治療是健保還是自費？費用大約多少？</summary><div class="ans">醫院與部分診所的語言治療可由健保給付（需符合條件並由醫師開立）；獨立的語言治療所多為自費，常見行情約每堂（30–50 分鐘）新台幣 800 至 1,500 元不等，依地區、時段與個別／團體而異，實際以各院所公告為準。</div></details>
+      <details><summary>語言治療所和醫院的語言治療有什麼不同？</summary><div class="ans">醫院復健科多可走健保、適合需要醫療評估或同時做物理／職能治療的個案，但常需排隊；語言治療所多為自費、預約彈性、課程較密集，適合希望穩定且密集訓練者。兩者可互相搭配。</div></details>
+      <details><summary>成人中風或失語症也能做語言治療嗎？</summary><div class="ans">可以。語言治療不只服務兒童，也涵蓋成人中風後失語症、吞嚥障礙、嗓音與構音問題。本名錄中許多醫院復健科同時提供成人語言治療服務。</div></details>
+      <details><summary>如何挑選合適的語言治療單位？</summary><div class="ans">建議考量：離家或學校的距離與交通、可預約時段、是否為健保或自費、治療師專長（兒童早療、構音、口吃、吞嚥、嗓音），並先電話確認需求是否相符與等候時間。</div></details>
+    </section>
   </div>
 </main>
 
