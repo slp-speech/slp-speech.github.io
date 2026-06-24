@@ -21,7 +21,7 @@ header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(251,250,2
 main{padding:24px 0 80px;}
 .intro h2{font-size:1.3rem;letter-spacing:.08em;margin:6px 0 12px;}
 .intro p{color:#4f5848;font-size:.95rem;margin-bottom:12px;}
-.jump{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 8px;}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 4px;}
 .jump:empty{display:none;}
 .jump a{font-size:.85rem;color:var(--tea-deep);background:var(--cloud);border:1px solid rgba(125,143,111,.3);border-radius:20px;padding:6px 15px;transition:all .25s;}
 .jump a:hover{background:var(--mist);}
@@ -34,7 +34,7 @@ main{padding:24px 0 80px;}
 .city-link-card .cc-dist{font-size:.82rem;color:#6a7263;margin:8px 0 12px;line-height:1.7;}
 .city-link-card .cc-go{font-size:.82rem;letter-spacing:.12em;color:var(--tea-deep);}
 
-.dist-block{margin-top:30px;}
+.dist-block{margin-top:24px;}
 .dist-block h2{font-size:1.18rem;letter-spacing:.08em;padding-bottom:8px;border-bottom:1px solid rgba(125,143,111,.25);margin-bottom:14px;}
 .clinic-list{display:grid;gap:12px;}
 .clinic-card{background:var(--cloud);border:1px solid rgba(125,143,111,.2);border-radius:6px;padding:16px 18px;}
@@ -48,7 +48,7 @@ main{padding:24px 0 80px;}
 .meta a{color:var(--tea-deep);border-bottom:1px solid var(--tea-light);word-break:break-all;}
 .meta .muted{color:#9aa291;}
 .detail{display:inline-block;margin-top:10px;font-size:.8rem;letter-spacing:.14em;color:var(--earth);}
-.faq{margin-top:48px;}
+.faq{margin-top:40px;}
 .faq h2{font-size:1.3rem;letter-spacing:.08em;margin-bottom:16px;}
 .faq details{background:var(--cloud);border:1px solid rgba(125,143,111,.22);border-radius:6px;padding:4px 20px;margin-bottom:12px;}
 .faq summary{font-family:'Noto Serif TC',serif;font-size:1rem;color:var(--pine);cursor:pointer;padding:14px 0;list-style:none;}

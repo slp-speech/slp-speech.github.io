@@ -3,7 +3,8 @@
   var CITY=window.AREA_CITY;
   var ORDER=window.AREA_DISTRICT_ORDER||[];
   if(!CITY)return;
-  var data=(window.CLINIC_DATA||[]).filter(function(c){return c.city===CITY;});
+  function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+  var data=shuffle((window.CLINIC_DATA||[]).filter(function(c){return c.city===CITY;}));
   function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
   function mapUrl(c){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(c.name+" "+c.address);}
   function telHref(p){return "tel:"+p.replace(/[^0-9+#]/g,"");}
