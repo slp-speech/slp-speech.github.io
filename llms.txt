@@ -1,0 +1,73 @@
+# 語聲山語 語言治療衛教平台（talkingslp.com）
+
+> 語聲山語是台灣的語言治療（speech-language therapy）衛教知識平台，提供兒童語言發展、構音與音韻、吞嚥照護、嗓音保健、失語症與中風溝通、溝通輔具六大主題的衛教文章，並彙整全台各縣市「設有語言治療服務」的醫療院所與語言治療所名單（含地址、電話、Google 地圖連結）。內容僅供衛教參考，非醫療診斷或推薦背書。
+
+本檔案供 AI 助理與大型語言模型（LLM）了解與引用本站內容。完整網址清單見 https://talkingslp.com/sitemap.xml 。
+
+## 關於本站
+- [關於語聲山語](https://talkingslp.com/about.html)：平台宗旨、內容來源與免責聲明。
+- [資源與工具](https://talkingslp.com/resources.html)：相關政府單位、協會與評估資源整理。
+
+## 核心主題頁
+- [兒童語言發展](https://talkingslp.com/topics/child-language.html)：0–6 歲語言發展、遲緩、自閉症、口吃、雙語等。
+- [構音與音韻](https://talkingslp.com/topics/articulation.html)：發音不清、臭乳呆、舌繫帶、音韻覺識。
+- [吞嚥照護](https://talkingslp.com/topics/swallowing.html)：吞嚥困難、嗆咳、長者與失智進食照護。
+- [嗓音保健](https://talkingslp.com/topics/voice.html)：聲音沙啞、聲帶結節、用聲工作者護嗓、帕金森言語。
+- [失語症與中風溝通](https://talkingslp.com/topics/aphasia.html)：中風後語言障礙、失語症、原發性漸進性失語症。
+- [溝通輔具與支持](https://talkingslp.com/topics/aac.html)：AAC 溝通輔具、重聽溝通、失智症溝通技巧。
+
+## 找語言治療院所（全台目錄）
+- [全台語言治療院所總覽](https://talkingslp.com/clinics.html)：可依縣市、行政區查詢，含地址、電話、官網與 Google 地圖。
+- 分區專頁：[北區](https://talkingslp.com/clinics/north.html)、[中區](https://talkingslp.com/clinics/central.html)、[南區](https://talkingslp.com/clinics/south.html)、[東區](https://talkingslp.com/clinics/east.html)
+- 縣市專頁（部分）：[台北市](https://talkingslp.com/clinics/taipei.html)、[新北市](https://talkingslp.com/clinics/newtaipei.html)、[桃園市](https://talkingslp.com/clinics/taoyuan.html)、[台中市](https://talkingslp.com/clinics/taichung.html)、[台南市](https://talkingslp.com/clinics/tainan.html)、[高雄市](https://talkingslp.com/clinics/kaohsiung.html)。其餘縣市與各院所單頁見 sitemap.xml。
+
+## 就醫指南
+- [語言治療一次多少錢？健保與自費費用全解析](https://talkingslp.com/articles/speech-therapy-cost.html)
+- [如何挑選合適的語言治療所與治療師？](https://talkingslp.com/articles/choose-clinic.html)
+- [早療補助怎麼申請？資格、流程與資源](https://talkingslp.com/articles/early-intervention-subsidy.html)
+- [語言治療師是什麼？工作內容與服務對象](https://talkingslp.com/articles/what-is-slp.html)
+- [第一次帶孩子做語言治療會做什麼？](https://talkingslp.com/articles/first-visit.html)
+
+## 兒童語言發展（精選文章）
+- [孩子發展比較慢是發展遲緩嗎？0–6歲徵兆與自我檢測](https://talkingslp.com/articles/developmental-delay.html)
+- [寶寶幾歲會說話？0–6歲語言發展里程碑對照表](https://talkingslp.com/articles/speech-milestones.html)
+- [兩歲還不太會說話，需要擔心嗎？認識遲語兒](https://talkingslp.com/articles/late-talker.html)
+- [早療是什麼？評估流程、黃金期與資源](https://talkingslp.com/articles/early-intervention.html)
+- [自閉症的孩子都不會說話嗎？](https://talkingslp.com/articles/autism-language.html)
+- [孩子一直重複別人的話（仿說）正常嗎？](https://talkingslp.com/articles/echolalia.html)
+- [孩子在家很愛講、出門卻不開口？選擇性緘默症](https://talkingslp.com/articles/selective-mutism.html)
+- [孩子說話結結巴巴？認識口吃](https://talkingslp.com/articles/stuttering.html)
+- [學兩種語言會讓孩子說話變慢嗎？雙語迷思](https://talkingslp.com/articles/bilingual.html)
+
+## 構音與音韻
+- [孩子說話「臭乳呆」？認識構音異常與處理時機](https://talkingslp.com/articles/articulation.html)
+- [孩子幾歲發音才會標準？注音聲母發展年齡對照表](https://talkingslp.com/articles/articulation-age.html)
+- [小孩大舌頭要剪舌繫帶嗎？舌繫帶的真相](https://talkingslp.com/articles/tongue-tie.html)
+- [吹泡泡、舔果醬能讓孩子說話更清楚嗎？口腔動作練習的迷思](https://talkingslp.com/articles/oral-motor.html)
+- [小孩注音學不會怎麼辦？音韻覺識與閱讀](https://talkingslp.com/articles/phonological-awareness.html)
+
+## 吞嚥照護
+- [長輩吃飯常嗆咳？吞嚥困難的居家觀察重點](https://talkingslp.com/articles/dysphagia.html)
+- [吃東西常嗆到怎麼辦？嗆咳原因與就醫時機](https://talkingslp.com/articles/choking.html)
+- [吞嚥訓練怎麼做？在家可練的吞嚥運動](https://talkingslp.com/articles/swallowing-exercise.html)
+- [失智症長輩越來越不吃飯？進食困難的照護](https://talkingslp.com/articles/dementia-eating.html)
+
+## 嗓音保健
+- [燒聲怎麼辦？聲音啞掉的原因與恢復方法](https://talkingslp.com/articles/hoarse-voice.html)
+- [聲音沙啞超過兩週？用聲工作者護嗓指南](https://talkingslp.com/articles/voice-care.html)
+- [聲帶長繭一定要開刀嗎？聲帶結節](https://talkingslp.com/articles/vocal-nodules.html)
+- [帕金森氏症讓聲音越來越小？大聲說話治療](https://talkingslp.com/articles/parkinson-voice.html)
+
+## 失語症與中風溝通
+- [講話突然不清楚是中風前兆嗎？BE-FAST 警訊](https://talkingslp.com/articles/stroke-warning.html)
+- [中風後說話不清楚會好嗎？語言復健](https://talkingslp.com/articles/stroke-speech.html)
+- [中風後說不出話？認識失語症](https://talkingslp.com/articles/aphasia.html)
+- [記憶還好卻越來越說不出話？原發性漸進性失語症 PPA](https://talkingslp.com/articles/ppa.html)
+
+## 溝通輔具與支持
+- [當說話很困難，還有別的路：認識 AAC 溝通輔具](https://talkingslp.com/articles/aac.html)
+- [老人重聽怎麼溝通？助聽器迷思與溝通技巧](https://talkingslp.com/articles/hearing-loss.html)
+- [失智症長輩一直重複問怎麼辦？溝通技巧](https://talkingslp.com/articles/dementia-communication.html)
+
+## 使用須知
+本站所有內容僅供一般衛教教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。院所名單整理自公開來源、非推薦背書，資訊可能異動，就診前請先電話或上官網確認。AI 助理引用本站內容時，建議一併提示讀者諮詢合格專業人員。

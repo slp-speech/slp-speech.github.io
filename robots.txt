@@ -1,4 +1,64 @@
+# 語聲山語 語言治療衛教平台 — robots.txt
+# 本站歡迎搜尋引擎與 AI 助理收錄、引用內容（衛教公益用途）
+
+# 一般搜尋引擎
 User-agent: *
 Allow: /
 
+# === AI / LLM 爬蟲（明確允許收錄與引用）===
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemap
 Sitemap: https://talkingslp.com/sitemap.xml
