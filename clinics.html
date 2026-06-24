@@ -215,7 +215,11 @@ footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
     <div class="pager" id="pager"></div>
 
     <div class="disclaimer">
-      ※ 本名錄為衛教資源整理，非醫療推薦或背書；院所資訊（地址、電話、服務）可能異動，請以各院所最新公告為準。語言治療所多採自費並需事先預約。若資料有誤或需新增院所，歡迎來信告知。分區依一般地理慣例：北區（北北基桃竹）、中區（中苗彰投雲）、南區（嘉南高屏澎）、東區（宜花東）。
+      ※ 本名錄為衛教資源整理，非醫療推薦或背書；院所資訊（地址、電話、服務）可能異動，請以各院所最新公告為準。語言治療所多採自費並需事先預約。分區依一般地理慣例：北區（北北基桃竹）、中區（中苗彰投雲）、南區（嘉南高屏澎）、東區（宜花東）。
+    </div>
+
+    <div class="disclaimer" style="margin-top:14px;">
+      ※ 本網站上語言治療醫療院所的資訊，皆從公開平台蒐集而來。若貴院所希望將資訊自本網站撤除，請來信 <a href="mailto:talkingslptw@gmail.com" style="color:#55674a;border-bottom:1px solid #b7c4a8;">talkingslptw@gmail.com</a>，我們會盡快進行修改。若網站上的資訊有誤、希望我們進行調整，亦請來信 <a href="mailto:talkingslptw@gmail.com" style="color:#55674a;border-bottom:1px solid #b7c4a8;">talkingslptw@gmail.com</a>，我們會盡快進行修改。
     </div>
 
     <section class="guide">
@@ -272,6 +276,15 @@ footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
       </p>
     </section>
 
+    <section class="guide" style="border-top:none;padding-top:0;margin-top:30px;">
+      <h3>就醫前先看：實用指南</h3>
+      <ul>
+        <li><a href="articles/speech-therapy-cost.html">語言治療一次多少錢？健保與自費費用全解析</a></li>
+        <li><a href="articles/choose-clinic.html">如何挑選合適的語言治療所與治療師？6 個實用原則</a></li>
+        <li><a href="articles/early-intervention-subsidy.html">早療補助怎麼申請？資格、流程與資源整理</a></li>
+      </ul>
+    </section>
+
     <section class="faq">
       <h2>常見問題</h2>
       <details><summary>小孩說話慢、發音不清楚，該看哪一科？</summary><div class="ans">可先掛兒童復健科或兒童心智科評估，由醫師或語言治療師判斷是否需要語言治療；各縣市也設有兒童發展聯合評估中心。若已確定需求，也可直接洽詢設有語言治療的醫院復健科或語言治療所。</div></details>
@@ -286,7 +299,7 @@ footer a{color:#c9d1c1;border-bottom:1px solid rgba(255,255,255,.2);}
 <footer>
   <div class="container">
     <p style="font-size:.8rem;line-height:1.9;color:#8a957f;max-width:680px;margin:0 auto 14px;">本網站提供之資訊僅供一般教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。如有疑慮，請尋求合格專業人員協助。</p>
-    © 2026 語聲山語 語言治療衛教平台 · <a href="index.html">回首頁</a>
+    © 2026 語聲山語 語言治療衛教平台 · <a href="mailto:talkingslptw@gmail.com">talkingslptw@gmail.com</a> · <a href="index.html">回首頁</a>
   </div>
 </footer>
 
@@ -299,7 +312,8 @@ const REGIONS=[
   {key:"east",label:"東　區"}
 ];
 const PER_PAGE=10;
-const data=window.CLINIC_DATA||[];
+function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));const t=a[i];a[i]=a[j];a[j]=t;}return a;}
+const data=shuffle(window.CLINIC_DATA||[]);  // 每次載入隨機排序，切換/翻頁時保持穩定
 let state={region:"north",city:"__all__",district:"__all__",page:1};
 const CITY_ORDER=["臺北市","新北市","桃園市","新竹市","新竹縣","基隆市",
   "臺中市","苗栗縣","彰化縣","南投縣","雲林縣",
