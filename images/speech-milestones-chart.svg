@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 1044" font-family="'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#55674a"/>
+      <stop offset="1" stop-color="#3d4a38"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="480" height="1044" rx="16" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="480" height="84" rx="16" fill="url(#hdr)"/>
+  <rect x="0" y="60" width="480" height="24" fill="#3d4a38"/>
+  <text x="240" y="40" text-anchor="middle" fill="#f7f6f1" font-size="25" font-weight="700" font-family="'Noto Serif TC','Songti TC',serif">0–6 歲 語言發展里程碑</text>
+  <text x="240" y="68" text-anchor="middle" fill="#b7c4a8" font-size="13">多數孩子做得到的年齡，個別差異存在</text>
+
+  <!-- cards: top = 96 + i*128 -->
+  <g>
+    <!-- 0-6m -->
+    <rect x="16" y="96" width="448" height="116" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="96" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="130" fill="#55674a" font-size="23" font-weight="700">0–6 個月</text>
+    <text x="36" y="164"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">對聲音有反應、會轉向音源</tspan></text>
+    <text x="36" y="194"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">咕咕聲、牙牙學語（ba-ba、ma-ma）</tspan></text>
+
+    <!-- 6-12m -->
+    <rect x="16" y="224" width="448" height="116" rx="10" fill="#f7f6f1"/>
+    <rect x="16" y="224" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="258" fill="#55674a" font-size="23" font-weight="700">6–12 個月</text>
+    <text x="36" y="292"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂自己名字與「不行」</tspan></text>
+    <text x="36" y="322"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">約 12 個月第一個單字、揮手再見</tspan></text>
+
+    <!-- 12-18m -->
+    <rect x="16" y="352" width="448" height="116" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="352" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="386" fill="#55674a" font-size="23" font-weight="700">12–18 個月</text>
+    <text x="36" y="420"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂簡單指令、指認身體部位</tspan></text>
+    <text x="36" y="450"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">詞彙約 10–50 個、大量用手勢</tspan></text>
+
+    <!-- 18-24m -->
+    <rect x="16" y="480" width="448" height="116" rx="10" fill="#f7f6f1"/>
+    <rect x="16" y="480" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="514" fill="#55674a" font-size="23" font-weight="700">18–24 個月</text>
+    <text x="36" y="548"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂兩步驟其一、能指認圖片</tspan></text>
+    <text x="36" y="578"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">詞彙爆發、出現雙詞（「媽媽抱」）</tspan></text>
+
+    <!-- 2-3y -->
+    <rect x="16" y="608" width="448" height="116" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="608" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="642" fill="#55674a" font-size="23" font-weight="700">2–3 歲</text>
+    <text x="36" y="676"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂兩步驟指令、大小裡外</tspan></text>
+    <text x="36" y="706"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">3–4 詞短句、3 歲約四分之三能被聽懂</tspan></text>
+
+    <!-- 3-4y -->
+    <rect x="16" y="736" width="448" height="116" rx="10" fill="#f7f6f1"/>
+    <rect x="16" y="736" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="770" fill="#55674a" font-size="23" font-weight="700">3–4 歲</text>
+    <text x="36" y="804"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂故事、答誰/什麼/哪裡</tspan></text>
+    <text x="36" y="834"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">句子變長、開始問「為什麼」</tspan></text>
+
+    <!-- 4-6y -->
+    <rect x="16" y="864" width="448" height="116" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="864" width="6" height="116" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="898" fill="#55674a" font-size="23" font-weight="700">4–6 歲</text>
+    <text x="36" y="932"><tspan fill="#7d8f6f" font-size="16" font-weight="700">聽　</tspan><tspan fill="#414a3c" font-size="17">聽懂較複雜的指令與因果</tspan></text>
+    <text x="36" y="962"><tspan fill="#a98f6f" font-size="16" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="17">完整句、能敘述、發音大致清晰</tspan></text>
+  </g>
+
+  <text x="20" y="1016" fill="#a98f6f" font-size="14">語聲山語 · 語言治療衛教平台</text>
+  <text x="460" y="1016" text-anchor="end" fill="#a98f6f" font-size="14">talkingslp.com</text>
+</svg>

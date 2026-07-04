@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 836" font-family="'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#55674a"/>
+      <stop offset="1" stop-color="#3d4a38"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="480" height="836" rx="16" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="480" height="84" rx="16" fill="url(#hdr)"/>
+  <rect x="0" y="60" width="480" height="24" fill="#3d4a38"/>
+  <text x="240" y="40" text-anchor="middle" fill="#f7f6f1" font-size="25" font-weight="700" font-family="'Noto Serif TC','Songti TC',serif">失語症 常見類型對照</text>
+  <text x="240" y="68" text-anchor="middle" fill="#b7c4a8" font-size="13">多為混合型、會隨復原改變；分類是理解工具，非標籤</text>
+
+  <!-- cards: top = 96 + i*140 -->
+  <g>
+    <!-- 布洛卡 -->
+    <rect x="16" y="96" width="448" height="128" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="96" width="6" height="128" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="128"><tspan fill="#55674a" font-size="21" font-weight="700">布洛卡</tspan><tspan fill="#8a957f" font-size="13" font-weight="400">　表達／非流暢型</tspan></text>
+    <text x="36" y="158"><tspan fill="#7d8f6f" font-size="15" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="16">費力、電報式</tspan><tspan fill="#7d8f6f" font-size="15" font-weight="700">　理解　</tspan><tspan fill="#414a3c" font-size="16">相對較好</tspan></text>
+    <text x="36" y="190"><tspan fill="#a98f6f" font-size="15" font-weight="700">特徵　</tspan><tspan fill="#414a3c" font-size="16">懂但說不出、複述困難、易挫折</tspan></text>
+
+    <!-- 韋尼克 -->
+    <rect x="16" y="236" width="448" height="128" rx="10" fill="#f7f6f1"/>
+    <rect x="16" y="236" width="6" height="128" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="268"><tspan fill="#55674a" font-size="21" font-weight="700">韋尼克</tspan><tspan fill="#8a957f" font-size="13" font-weight="400">　接收／流暢型</tspan></text>
+    <text x="36" y="298"><tspan fill="#7d8f6f" font-size="15" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="16">流利但空洞、有新語</tspan></text>
+    <text x="36" y="326"><tspan fill="#7d8f6f" font-size="15" font-weight="700">理解　</tspan><tspan fill="#414a3c" font-size="16">明顯困難</tspan><tspan fill="#a98f6f" font-size="15" font-weight="700">　特徵　</tspan><tspan fill="#414a3c" font-size="16">說得出卻兜不攏</tspan></text>
+
+    <!-- 全失語 -->
+    <rect x="16" y="376" width="448" height="128" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="376" width="6" height="128" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="408"><tspan fill="#55674a" font-size="21" font-weight="700">全失語</tspan><tspan fill="#8a957f" font-size="13" font-weight="400">　Global</tspan></text>
+    <text x="36" y="438"><tspan fill="#7d8f6f" font-size="15" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="16">極少、費力</tspan><tspan fill="#7d8f6f" font-size="15" font-weight="700">　理解　</tspan><tspan fill="#414a3c" font-size="16">嚴重困難</tspan></text>
+    <text x="36" y="470"><tspan fill="#a98f6f" font-size="15" font-weight="700">特徵　</tspan><tspan fill="#414a3c" font-size="16">理解與表達都嚴重受損</tspan></text>
+
+    <!-- 傳導型 -->
+    <rect x="16" y="516" width="448" height="128" rx="10" fill="#f7f6f1"/>
+    <rect x="16" y="516" width="6" height="128" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="548"><tspan fill="#55674a" font-size="21" font-weight="700">傳導型</tspan><tspan fill="#8a957f" font-size="13" font-weight="400">　Conduction</tspan></text>
+    <text x="36" y="578"><tspan fill="#7d8f6f" font-size="15" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="16">大致流暢</tspan><tspan fill="#7d8f6f" font-size="15" font-weight="700">　理解　</tspan><tspan fill="#414a3c" font-size="16">相對較好</tspan></text>
+    <text x="36" y="610"><tspan fill="#a98f6f" font-size="15" font-weight="700">特徵　</tspan><tspan fill="#414a3c" font-size="16">複述特別困難、會自我修正</tspan></text>
+
+    <!-- 失名症 -->
+    <rect x="16" y="656" width="448" height="128" rx="10" fill="#eef1ea"/>
+    <rect x="16" y="656" width="6" height="128" rx="3" fill="#7d8f6f"/>
+    <text x="36" y="688"><tspan fill="#55674a" font-size="21" font-weight="700">失名症</tspan><tspan fill="#8a957f" font-size="13" font-weight="400">　Anomic</tspan></text>
+    <text x="36" y="718"><tspan fill="#7d8f6f" font-size="15" font-weight="700">說　</tspan><tspan fill="#414a3c" font-size="16">流暢但常卡名稱</tspan><tspan fill="#7d8f6f" font-size="15" font-weight="700">　理解　</tspan><tspan fill="#414a3c" font-size="16">好</tspan></text>
+    <text x="36" y="750"><tspan fill="#a98f6f" font-size="15" font-weight="700">特徵　</tspan><tspan fill="#414a3c" font-size="16">想不起名字、講話繞圈</tspan></text>
+  </g>
+
+  <text x="20" y="812" fill="#a98f6f" font-size="14">語聲山語 · 語言治療衛教平台</text>
+  <text x="460" y="812" text-anchor="end" fill="#a98f6f" font-size="14">talkingslp.com</text>
+</svg>

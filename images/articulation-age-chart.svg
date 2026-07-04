@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" font-family="'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif">
+  <defs>
+    <linearGradient id="hdr" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#55674a"/>
+      <stop offset="1" stop-color="#3d4a38"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="800" height="640" rx="16" fill="#fbfaf6"/>
+  <rect x="0" y="0" width="800" height="96" rx="16" fill="url(#hdr)"/>
+  <rect x="0" y="70" width="800" height="26" fill="#3d4a38"/>
+  <text x="400" y="45" text-anchor="middle" fill="#f7f6f1" font-size="30" font-weight="700" font-family="'Noto Serif TC','Songti TC',serif">注音聲母 發展年齡對照表</text>
+  <text x="400" y="78" text-anchor="middle" fill="#b7c4a8" font-size="16" letter-spacing="2">多數孩子大約幾歲能發出這些音（個別差異存在，僅供參考）</text>
+
+  <!-- rows -->
+  <!-- row1 -->
+  <rect x="40" y="120" width="720" height="86" rx="8" fill="#eef1ea"/>
+  <text x="70" y="156" fill="#55674a" font-size="22" font-weight="700">約 3 歲前</text>
+  <text x="70" y="185" fill="#8a957f" font-size="14">雙唇・舌尖・舌根音</text>
+  <text x="300" y="175" fill="#2e342b" font-size="34" font-weight="700" letter-spacing="6">ㄅ ㄆ ㄇ ㄉ ㄊ ㄋ ㄍ ㄎ ㄏ</text>
+
+  <!-- row2 -->
+  <rect x="40" y="216" width="720" height="86" rx="8" fill="#f7f6f1"/>
+  <text x="70" y="252" fill="#55674a" font-size="22" font-weight="700">約 3–4 歲</text>
+  <text x="70" y="281" fill="#8a957f" font-size="14">逐漸穩定</text>
+  <text x="300" y="271" fill="#2e342b" font-size="34" font-weight="700" letter-spacing="6">ㄈ ㄌ ㄐ ㄑ ㄒ</text>
+
+  <!-- row3 -->
+  <rect x="40" y="312" width="720" height="86" rx="8" fill="#eef1ea"/>
+  <text x="70" y="348" fill="#55674a" font-size="22" font-weight="700">約 4–6 歲</text>
+  <text x="70" y="377" fill="#8a957f" font-size="14">舌尖前音</text>
+  <text x="300" y="367" fill="#2e342b" font-size="34" font-weight="700" letter-spacing="6">ㄗ ㄘ ㄙ</text>
+
+  <!-- row4 -->
+  <rect x="40" y="408" width="720" height="86" rx="8" fill="#f7f6f1"/>
+  <text x="70" y="444" fill="#55674a" font-size="22" font-weight="700">約 5–7 歲</text>
+  <text x="70" y="473" fill="#a98f6f" font-size="14">捲舌音・最晚穩定</text>
+  <text x="300" y="463" fill="#2e342b" font-size="34" font-weight="700" letter-spacing="6">ㄓ ㄔ ㄕ ㄖ</text>
+
+  <!-- intelligibility strip -->
+  <rect x="40" y="516" width="720" height="72" rx="8" fill="#7d8f6f"/>
+  <text x="70" y="546" fill="#f7f6f1" font-size="16" font-weight="700">說話清晰度（陌生人能聽懂的比例）</text>
+  <text x="90" y="576" fill="#ffffff" font-size="20" font-weight="700">2 歲 ≈ 50%</text>
+  <text x="330" y="576" fill="#ffffff" font-size="20" font-weight="700">3 歲 ≈ 75%</text>
+  <text x="560" y="576" fill="#ffffff" font-size="20" font-weight="700">4 歲 大致聽得懂</text>
+
+  <text x="40" y="618" fill="#a98f6f" font-size="14">語聲山語 · 語言治療衛教平台</text>
+  <text x="760" y="618" text-anchor="end" fill="#a98f6f" font-size="14">talkingslp.com</text>
+</svg>
