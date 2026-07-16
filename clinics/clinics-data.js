@@ -282,7 +282,7 @@ window.CLINIC_DATA = [
   {id:"tongxin-north", name:"童心語言治療所", region:"central", city:"臺中市", district:"北區", address:"臺中市北區三民路三段313號5樓之2", phone:"04-2233-3727", url:"", services:"語言治療", dedicated:true},
   {id:"sunsoda-north", name:"陽光汽水語言治療所", region:"central", city:"臺中市", district:"北區", address:"臺中市北區漢口路五段100之4號5樓", phone:"0911-969480", url:"", services:"語言治療、居家服務", dedicated:true},
   {id:"peiyu-beitun", name:"沛語語言治療所", region:"central", city:"臺中市", district:"北屯區", address:"臺中市北屯區瀋陽路三段293號1樓", phone:"04-2243-0868", url:"", services:"語言治療", dedicated:true},
-  {id:"xinqiushuo-beitun", name:"心球說語言治療所", region:"central", city:"臺中市", district:"北屯區", address:"臺中市北屯區太原路三段1198號1樓", phone:"0966-818962", url:"", services:"語言治療", dedicated:true},
+  {id:"xinqiushuo-beitun", name:"心球說語言治療所", region:"central", city:"臺中市", district:"北屯區", address:"臺中市北屯區太原路三段1198號1樓", phone:"0917-068439", url:"", services:"語言治療", dedicated:true},
   {id:"tuoqi-daye-nantun", name:"託奇大業語言治療所", region:"central", city:"臺中市", district:"南屯區", address:"臺中市南屯區大業路573號", phone:"0983-600958", url:"", services:"語言治療", dedicated:true},
   {id:"yiliemaizi-nantun", name:"一粒麥子語言治療所", region:"central", city:"臺中市", district:"南屯區", address:"臺中市南屯區永春東路800號2樓", phone:"0919-023117", url:"", services:"語言治療", dedicated:true},
   {id:"siguoyu-dali", name:"思果語語言治療所", region:"central", city:"臺中市", district:"大里區", address:"臺中市大里區新南路69號", phone:"0972-372026", url:"", services:"語言治療", dedicated:true},
