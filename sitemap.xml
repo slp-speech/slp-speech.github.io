@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://talkingslp.com/</loc><priority>1.0</priority><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://talkingslp.com/</loc><priority>1.0</priority><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://talkingslp.com/about.html</loc><priority>0.5</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/resources.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/articles.html</loc><priority>0.9</priority><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://talkingslp.com/resources.html</loc><priority>0.8</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/tools/child-language-checklist.html</loc><priority>0.9</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/tools/senior-communication-checklist.html</loc><priority>0.9</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/articles.html</loc><priority>0.9</priority><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://talkingslp.com/clinics.html</loc><priority>0.9</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/clinics/north.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/clinics/central.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
@@ -32,10 +34,10 @@
   <url><loc>https://talkingslp.com/clinics/taitung.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/articles/reduplicated-words.html</loc><priority>0.7</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/articles/developmental-delay.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/topics/child-language.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/topics/articulation.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/topics/swallowing.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
-  <url><loc>https://talkingslp.com/topics/voice.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
+  <url><loc>https://talkingslp.com/topics/child-language.html</loc><priority>0.8</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/topics/articulation.html</loc><priority>0.8</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/topics/swallowing.html</loc><priority>0.8</priority><lastmod>2026-09-08</lastmod></url>
+  <url><loc>https://talkingslp.com/topics/voice.html</loc><priority>0.8</priority><lastmod>2026-09-08</lastmod></url>
   <url><loc>https://talkingslp.com/topics/aphasia.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/topics/aac.html</loc><priority>0.8</priority><lastmod>2026-06-20</lastmod></url>
   <url><loc>https://talkingslp.com/articles/speech-milestones.html</loc><priority>0.7</priority><lastmod>2026-06-20</lastmod></url>
