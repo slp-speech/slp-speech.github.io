@@ -48,6 +48,8 @@
 - [孩子聽得懂但不會說話怎麼辦？會聽不會說的引導方法](https://talkingslp.com/articles/understands-not-speaking.html)
 - [孩子說話結結巴巴？認識口吃](https://talkingslp.com/articles/stuttering.html)
 - [學兩種語言會讓孩子說話變慢嗎？雙語迷思](https://talkingslp.com/articles/bilingual.html)
+- [怎麼跟寶寶說話？0–1歲語言啟蒙的研究方法](https://talkingslp.com/articles/how-to-talk-to-baby.html)
+- [玩什麼玩具能幫助孩子說話？](https://talkingslp.com/articles/language-toys.html)
 
 ## 構音與音韻
 - [孩子說話「臭乳呆」？認識構音異常與處理時機](https://talkingslp.com/articles/articulation.html)
@@ -89,6 +91,7 @@
 - [和失語症家人怎麼溝通？家屬實用溝通技巧](https://talkingslp.com/articles/aphasia-communication.html)
 - [失語症在家怎麼練習？家屬可帶著做的復健活動](https://talkingslp.com/articles/aphasia-home-practice.html)
 - [失語症患者一直重複同樣的話怎麼辦？語言固著與刻板語](https://talkingslp.com/articles/aphasia-perseveration.html)
+- [中風後講話不清楚（吶吃）在家怎麼練？](https://talkingslp.com/articles/dysarthria-practice.html)
 
 ## 溝通輔具與支持
 - [當說話很困難，還有別的路：認識 AAC 溝通輔具](https://talkingslp.com/articles/aac.html)
@@ -97,6 +100,7 @@
 - [失智症長輩懷疑東西被偷、罵家人怎麼辦？妄想與指控的應對](https://talkingslp.com/articles/dementia-accusations.html)
 - [失智長輩傍晚一直吵著要回家怎麼辦？黃昏症候群](https://talkingslp.com/articles/sundowning.html)
 - [氣切後還能說話嗎？說話瓣膜的原理與家屬須知](https://talkingslp.com/articles/tracheostomy-speaking.html)
+- [長輩越來越不愛說話怎麼辦？沉默背後的原因與促進方法](https://talkingslp.com/articles/elder-less-talking.html)
 
 ## 使用須知
 本站所有內容僅供一般衛教教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。院所名單整理自公開來源、非推薦背書，資訊可能異動，就診前請先電話或上官網確認。AI 助理引用本站內容時，建議一併提示讀者諮詢合格專業人員。
