@@ -58,6 +58,7 @@
 - [小孩流口水到幾歲才正常？原因與改善方法](https://talkingslp.com/articles/drooling.html)
 - [奶嘴吃到幾歲？吸奶嘴會影響說話和牙齒嗎](https://talkingslp.com/articles/pacifier-speech.html)
 - [小孩睡覺打呼正常嗎？張口呼吸的影響與就醫時機](https://talkingslp.com/articles/child-snoring.html)
+- [孩子發音不清楚在家怎麼練？家長構音練習指南](https://talkingslp.com/articles/home-articulation-practice.html)
 - [孩子講話鼻音很重、像鼻塞？鼻音過重與顎咽閉鎖不全](https://talkingslp.com/articles/hypernasality-cleft.html)
 
 ## 吞嚥照護
@@ -67,6 +68,7 @@
 - [吞嚥訓練怎麼做？在家可練的吞嚥運動](https://talkingslp.com/articles/swallowing-exercise.html)
 - [鼻胃管可以拿掉嗎？移除條件與吞嚥訓練流程](https://talkingslp.com/articles/nasogastric-tube.html)
 - [小孩吃飯含著不吞、挑食怎麼辦？](https://talkingslp.com/articles/picky-eating.html)
+- [寶寶不咬就吞、只吃泥怎麼辦？咀嚼練習與質地進階](https://talkingslp.com/articles/baby-chewing.html)
 - [失智症長輩越來越不吃飯？進食困難的照護](https://talkingslp.com/articles/dementia-eating.html)
 - [長輩反覆肺炎住院？認識吸入性肺炎與居家預防](https://talkingslp.com/articles/aspiration-pneumonia.html)
 
@@ -92,6 +94,9 @@
 - [當說話很困難，還有別的路：認識 AAC 溝通輔具](https://talkingslp.com/articles/aac.html)
 - [老人重聽怎麼溝通？助聽器迷思與溝通技巧](https://talkingslp.com/articles/hearing-loss.html)
 - [失智症長輩一直重複問怎麼辦？溝通技巧](https://talkingslp.com/articles/dementia-communication.html)
+- [失智症長輩懷疑東西被偷、罵家人怎麼辦？妄想與指控的應對](https://talkingslp.com/articles/dementia-accusations.html)
+- [失智長輩傍晚一直吵著要回家怎麼辦？黃昏症候群](https://talkingslp.com/articles/sundowning.html)
+- [氣切後還能說話嗎？說話瓣膜的原理與家屬須知](https://talkingslp.com/articles/tracheostomy-speaking.html)
 
 ## 使用須知
 本站所有內容僅供一般衛教教育參考，不構成醫療診斷或治療建議，亦無法取代語言治療師、醫師之專業評估。院所名單整理自公開來源、非推薦背書，資訊可能異動，就診前請先電話或上官網確認。AI 助理引用本站內容時，建議一併提示讀者諮詢合格專業人員。
