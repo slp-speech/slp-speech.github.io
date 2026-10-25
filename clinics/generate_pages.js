@@ -73,7 +73,7 @@ ${webRow}
 <div class="actions"><a class="a-back" href="${dirUrl}">← 回${esc(c.city)}${esc(c.district)}院所</a>${goWeb}</div>
 <div class="note">※ 本頁資訊整理自公開來源，僅供衛教參考，非醫療推薦或背書。院所之地址、電話與服務內容可能異動，就診前請務必先電話或上官網確認。語言治療費用依院所性質而定：醫院或診所復健科符合條件並經醫師開立者可由健保給付，獨立語言治療所則多為自費，且多需事先預約。</div>
 </div></main>
-<footer><div class="container">© 2026 語聲山語 語言治療衛教平台 · <a href="mailto:talkingslptw@gmail.com">talkingslptw@gmail.com</a> · <a href="../clinics.html">醫療院所總覽</a> · <a href="../index.html">回首頁</a></div></footer>`;
+<footer><div class="container">© 2026 語聲山語 語言治療衛教平台 · <a href="mailto:talkingslptw@gmail.com">talkingslptw@gmail.com</a> · <a href="../privacy.html">隱私權政策</a> · <a href="../clinics.html">醫療院所總覽</a> · <a href="../index.html">回首頁</a></div></footer>`;
 }
 
 function renderJsonld(c) {
@@ -119,6 +119,8 @@ ${renderJsonld(c)}
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="clinic.css">
 <script>window.CLINIC_ID="${c.id}";</script>
+<meta name="google-adsense-account" content="ca-pub-3965776072484563">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3965776072484563" crossorigin="anonymous"></script>
 </head>
 <body>
 ${renderBody(c)}
